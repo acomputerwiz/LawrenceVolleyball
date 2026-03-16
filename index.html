@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ========== SEO META ========== -->
+    <title>Elite Positive Volleyball | Coaching · Clinics · Open Gym</title>
+    <meta name="description" content="Elite Positive Volleyball offers expert coaching for juniors and adults built on encouragement, growth mindset, and competitive excellence. Open gyms, tryouts, clinics, and camps near you.">
+    <meta name="keywords" content="volleyball coaching, positive coaching, youth volleyball, adult volleyball, open gym volleyball, volleyball tryouts, volleyball clinics, volleyball camps, elite volleyball training">
+    <meta name="author" content="Elite Positive Volleyball">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://YOUR-GITHUB-USERNAME.github.io/elite-positive-volleyball/">
+
+    <!-- ========== GEO META ========== -->
+    <meta name="geo.region" content="US">
+    <!-- UPDATE these to your actual city/state -->
+    <meta name="geo.placename" content="Your City, Your State">
+    <meta name="geo.position" content="00.0000;-00.0000">
+    <meta name="ICBM" content="00.0000, -00.0000">
+
+    <!-- ========== OPEN GRAPH / SOCIAL ========== -->
+    <meta property="og:title" content="Elite Positive Volleyball | Coaching · Clinics · Open Gym">
+    <meta property="og:description" content="Expert volleyball coaching built on positivity, growth, and competitive excellence for juniors and adults.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://YOUR-GITHUB-USERNAME.github.io/elite-positive-volleyball/">
+    <meta property="og:image" content="https://YOUR-GITHUB-USERNAME.github.io/elite-positive-volleyball/og-image.jpg">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- ========== STRUCTURED DATA (JSON-LD) ========== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SportsOrganization",
+        "name": "Elite Positive Volleyball",
+        "description": "Expert volleyball coaching for juniors and adults built on encouragement, growth mindset, and competitive excellence.",
+        "url": "https://YOUR-GITHUB-USERNAME.github.io/elite-positive-volleyball/",
+        "sport": "Volleyball",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Your City",
+            "addressRegion": "Your State",
+            "postalCode": "00000",
+            "addressCountry": "US"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "General Inquiry",
+            "email": "your-email@example.com"
+        },
+        "sameAs": [
+            "https://github.com/YOUR-GITHUB-USERNAME"
+        ]
+    }
+    </script>
+
+    <!-- ========== GOOGLE FONTS ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- ========== reCAPTCHA (uncomment when you have your site key) ========== -->
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+
+    <style>
+        /* ===========================
+           CSS CUSTOM PROPERTIES
+           =========================== */
+        :root {
+            --navy:       #0a1628;
+            --navy-mid:   #121f36;
+            --navy-light: #1a2d4d;
+            --gold:       #f0a500;
+            --gold-light: #ffc94d;
+            --cream:      #faf6ee;
+            --white:      #ffffff;
+            --gray-100:   #f3f4f6;
+            --gray-300:   #d1d5db;
+            --gray-500:   #6b7280;
+            --gray-700:   #374151;
+            --red-accent: #e63946;
+            --green:      #2a9d5c;
+
+            --font-display: 'Bebas Neue', 'Impact', sans-serif;
+            --font-heading: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+            --font-body:    'Barlow', 'Helvetica Neue', sans-serif;
+
+            --max-width: 1200px;
+            --section-pad: 80px;
+        }
+
+        /* ===========================
+           RESET & BASE
+           =========================== */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+        body {
+            font-family: var(--font-body);
+            color: var(--gray-700);
+            background: var(--white);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        img { max-width: 100%; display: block; }
+        a { color: inherit; text-decoration: none; }
+        ul { list-style: none; }
+
+        /* ===========================
+           UTILITIES
+           =========================== */
+        .container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+        .section-pad { padding: var(--section-pad) 0; }
+        .text-center { text-align: center; }
+        .gold-text { color: var(--gold); }
+        .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+        /* ===========================
+           TYPOGRAPHY
+           =========================== */
+        .section-label {
+            font-family: var(--font-heading);
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            line-height: 1.05;
+            color: var(--navy);
+            margin-bottom: 20px;
+        }
+        .section-title.light { color: var(--white); }
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--gray-500);
+            max-width: 640px;
+            margin: 0 auto 40px;
+        }
+
+        /* ===========================
+           BUTTONS
+           =========================== */
+        .btn {
+            display: inline-block;
+            padding: 14px 36px;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+        }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
+        .btn-gold { background: var(--gold); color: var(--navy); }
+        .btn-gold:hover { background: var(--gold-light); }
+        .btn-outline { background: transparent; color: var(--white); border: 2px solid var(--white); }
+        .btn-outline:hover { background: var(--white); color: var(--navy); }
+        .btn-navy { background: var(--navy); color: var(--white); }
+        .btn-navy:hover { background: var(--navy-light); }
+
+        /* ===========================
+           NAVBAR
+           =========================== */
+        .navbar {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            background: rgba(10, 22, 40, 0.95);
+            backdrop-filter: blur(8px);
+            border-bottom: 2px solid var(--gold);
+        }
+        .navbar .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            color: var(--white);
+            letter-spacing: 2px;
+        }
+        .logo span { color: var(--gold); }
+        .nav-links { display: flex; gap: 28px; align-items: center; }
+        .nav-links a {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--gray-300);
+            transition: color 0.2s;
+        }
+        .nav-links a:hover { color: var(--gold); }
+        .hamburger {
+            display: none; flex-direction: column; gap: 5px; cursor: pointer;
+            background: none; border: none; padding: 4px;
+        }
+        .hamburger span { display: block; width: 26px; height: 2px; background: var(--white); border-radius: 2px; transition: 0.3s; }
+
+        /* ===========================
+           HERO
+           =========================== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 50%, #0d2137 100%);
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%; right: -20%;
+            width: 900px; height: 900px;
+            background: radial-gradient(circle, rgba(240,165,0,0.12) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 120px;
+            background: linear-gradient(to top, var(--white), transparent);
+        }
+        /* volleyball pattern dots */
+        .hero-pattern {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image:
+                radial-gradient(circle, rgba(240,165,0,0.06) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .hero-content {
+            position: relative; z-index: 2;
+            max-width: 720px;
+            padding-top: 80px;
+        }
+        .hero-badge {
+            display: inline-block;
+            padding: 6px 18px;
+            background: rgba(240,165,0,0.15);
+            border: 1px solid rgba(240,165,0,0.3);
+            border-radius: 20px;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 24px;
+        }
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(3rem, 8vw, 5.5rem);
+            line-height: 0.95;
+            color: var(--white);
+            margin-bottom: 24px;
+        }
+        .hero h1 .highlight {
+            color: var(--gold);
+            display: block;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--gray-300);
+            max-width: 520px;
+            margin-bottom: 36px;
+            line-height: 1.7;
+        }
+        .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+        .hero-stat-strip {
+            position: relative; z-index: 2;
+            display: flex; gap: 48px;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .hero-stat-strip .stat-num {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            color: var(--gold);
+        }
+        .hero-stat-strip .stat-label {
+            font-size: 0.85rem;
+            color: var(--gray-500);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Decorative volleyball SVG */
+        .hero-volleyball {
+            position: absolute;
+            right: 5%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 420px; height: 420px;
+            opacity: 0.08;
+            z-index: 1;
+        }
+
+        /* ===========================
+           MISSION STATEMENT
+           =========================== */
+        .mission {
+            background: var(--cream);
+            border-top: 4px solid var(--gold);
+        }
+        .mission-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .mission-quote {
+            position: relative;
+            font-family: var(--font-body);
+            font-size: 1.35rem;
+            font-weight: 500;
+            line-height: 1.8;
+            color: var(--navy);
+            padding-left: 30px;
+            border-left: 4px solid var(--gold);
+        }
+        .mission-values { display: flex; flex-direction: column; gap: 20px; }
+        .value-card {
+            display: flex; align-items: flex-start; gap: 16px;
+            padding: 20px;
+            background: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+        }
+        .value-icon {
+            flex-shrink: 0;
+            width: 48px; height: 48px;
+            display: flex; align-items: center; justify-content: center;
+            background: var(--navy);
+            color: var(--gold);
+            border-radius: 8px;
+            font-size: 1.3rem;
+        }
+        .value-card h4 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: var(--navy);
+            margin-bottom: 4px;
+        }
+        .value-card p { font-size: 0.92rem; color: var(--gray-500); }
+
+        /* ===========================
+           ABOUT / COACHES
+           =========================== */
+        .about { background: var(--white); }
+        .coaches-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 36px;
+            margin-top: 20px;
+        }
+        .coach-card {
+            border: 1px solid var(--gray-100);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+        .coach-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+        }
+        .coach-img {
+            height: 260px;
+            background: linear-gradient(135deg, var(--navy), var(--navy-light));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .coach-img::after {
+            content: '';
+            position: absolute; bottom: 0; left: 0; right: 0;
+            height: 60px;
+            background: linear-gradient(to top, var(--white), transparent);
+        }
+        .coach-img .placeholder-icon {
+            font-size: 4rem;
+            opacity: 0.3;
+        }
+        .coach-body { padding: 24px; }
+        .coach-body h3 {
+            font-family: var(--font-heading);
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 4px;
+        }
+        .coach-role {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        .coach-body p { font-size: 0.95rem; color: var(--gray-500); }
+        .coaching-style {
+            margin-top: 48px;
+            padding: 40px;
+            background: var(--navy);
+            border-radius: 12px;
+            color: var(--white);
+        }
+        .coaching-style h3 {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 16px;
+        }
+        .coaching-style p { color: var(--gray-300); line-height: 1.8; }
+        .style-pillars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+            margin-top: 28px;
+        }
+        .pillar {
+            padding: 20px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .pillar-num {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            color: var(--gold);
+        }
+        .pillar h4 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1rem;
+            margin: 8px 0 4px;
+            color: var(--white);
+        }
+        .pillar p { font-size: 0.85rem; color: var(--gray-500); }
+
+        /* ===========================
+           OPEN GYM
+           =========================== */
+        .open-gym { background: var(--gray-100); }
+        .gym-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 36px;
+        }
+        .gym-card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+        }
+        .gym-header {
+            padding: 28px 28px 20px;
+        }
+        .gym-header.juniors { border-top: 4px solid var(--gold); }
+        .gym-header.adults { border-top: 4px solid var(--navy); }
+        .gym-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-family: var(--font-heading);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        .juniors .gym-tag { background: rgba(240,165,0,0.15); color: var(--gold); }
+        .adults .gym-tag { background: rgba(10,22,40,0.1); color: var(--navy); }
+        .gym-header h3 {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            color: var(--navy);
+            margin-bottom: 8px;
+        }
+        .gym-header p { font-size: 0.95rem; color: var(--gray-500); }
+        .gym-details {
+            padding: 0 28px 28px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .gym-detail {
+            display: flex; align-items: center; gap: 12px;
+            font-size: 0.95rem;
+            color: var(--gray-700);
+        }
+        .gym-detail .icon {
+            width: 36px; height: 36px;
+            display: flex; align-items: center; justify-content: center;
+            background: var(--gray-100);
+            border-radius: 6px;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        /* ===========================
+           TRYOUTS
+           =========================== */
+        .tryouts {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+            color: var(--white);
+        }
+        .tryout-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: start;
+        }
+        .tryout-info h3 {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin: 24px 0 12px;
+        }
+        .tryout-info p { color: var(--gray-300); line-height: 1.7; }
+        .tryout-info ul { margin: 12px 0; }
+        .tryout-info li {
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+            color: var(--gray-300);
+        }
+        .tryout-info li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: bold;
+        }
+        .tryout-form-wrapper {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 32px;
+        }
+        .tryout-form-wrapper h3 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--gold);
+            margin-bottom: 8px;
+        }
+        .tryout-form-wrapper p {
+            color: var(--gray-500);
+            font-size: 0.92rem;
+            margin-bottom: 20px;
+        }
+        .age-calc-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 16px;
+            padding: 10px 20px;
+            background: rgba(240,165,0,0.15);
+            border: 1px solid rgba(240,165,0,0.3);
+            border-radius: 6px;
+            color: var(--gold);
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+        .age-calc-link:hover { background: rgba(240,165,0,0.25); }
+
+        /* ===========================
+           PLAYER SURVEY
+           =========================== */
+        .survey { background: var(--cream); }
+        .survey-content {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 48px;
+            align-items: start;
+        }
+        .survey-info p { color: var(--gray-500); line-height: 1.7; margin-bottom: 16px; }
+        .survey-benefits {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .benefit {
+            display: flex; gap: 12px; align-items: flex-start;
+        }
+        .benefit-check {
+            flex-shrink: 0;
+            width: 24px; height: 24px;
+            background: var(--green);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 0.8rem;
+            margin-top: 2px;
+        }
+        .benefit p { color: var(--gray-700); font-size: 0.95rem; }
+
+        /* ===========================
+           GOOGLE FORM EMBED WRAPPER
+           =========================== */
+        .form-embed {
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            overflow: hidden;
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+        .form-embed-header {
+            padding: 16px 24px;
+            background: var(--navy);
+            color: var(--gold);
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+        .form-embed iframe {
+            flex: 1;
+            width: 100%;
+            min-height: 480px;
+            border: none;
+        }
+        /* Placeholder shown before real form URL is set */
+        .form-placeholder {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            text-align: center;
+            color: var(--gray-500);
+        }
+        .form-placeholder .icon { font-size: 3rem; margin-bottom: 16px; opacity: 0.5; }
+        .form-placeholder p { font-size: 0.95rem; max-width: 300px; }
+        .form-placeholder code {
+            display: block;
+            margin-top: 12px;
+            font-size: 0.8rem;
+            background: var(--gray-100);
+            padding: 6px 12px;
+            border-radius: 4px;
+            color: var(--gray-700);
+        }
+
+        /* ===========================
+           SPONSORS
+           =========================== */
+        .sponsors { background: var(--white); }
+        .sponsor-tiers { display: flex; flex-direction: column; gap: 40px; }
+        .tier-label {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            color: var(--navy);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .tier-label .badge {
+            padding: 4px 14px;
+            border-radius: 4px;
+            font-family: var(--font-heading);
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+        .tier-label .badge.gold-tier { background: var(--gold); color: var(--navy); }
+        .tier-label .badge.silver-tier { background: var(--gray-300); color: var(--gray-700); }
+        .tier-label .badge.bronze-tier { background: #cd7f32; color: var(--white); }
+        .sponsor-logos {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+        }
+        .sponsor-slot {
+            height: 100px;
+            border: 2px dashed var(--gray-300);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-500);
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: border-color 0.2s, background 0.2s;
+        }
+        .sponsor-slot:hover {
+            border-color: var(--gold);
+            background: rgba(240,165,0,0.04);
+        }
+        .sponsor-cta {
+            margin-top: 40px;
+            padding: 32px;
+            background: var(--cream);
+            border-radius: 12px;
+            text-align: center;
+        }
+        .sponsor-cta h3 {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            color: var(--navy);
+            margin-bottom: 12px;
+        }
+        .sponsor-cta p { color: var(--gray-500); margin-bottom: 20px; }
+
+        /* ===========================
+           CONTACT
+           =========================== */
+        .contact { background: var(--gray-100); }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 48px;
+            align-items: start;
+        }
+        .contact-info { display: flex; flex-direction: column; gap: 24px; }
+        .contact-item { display: flex; align-items: flex-start; gap: 16px; }
+        .contact-icon {
+            flex-shrink: 0;
+            width: 44px; height: 44px;
+            display: flex; align-items: center; justify-content: center;
+            background: var(--navy);
+            color: var(--gold);
+            border-radius: 8px;
+            font-size: 1.2rem;
+        }
+        .contact-item h4 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--navy);
+            margin-bottom: 2px;
+        }
+        .contact-item p { font-size: 0.92rem; color: var(--gray-500); }
+
+        /* ===========================
+           FOOTER
+           =========================== */
+        .footer {
+            background: var(--navy);
+            color: var(--gray-500);
+            padding: 48px 0 24px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-brand .logo { margin-bottom: 16px; }
+        .footer-brand p { font-size: 0.9rem; line-height: 1.7; max-width: 320px; }
+        .footer h4 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--white);
+            margin-bottom: 16px;
+        }
+        .footer-links { display: flex; flex-direction: column; gap: 10px; }
+        .footer-links a { font-size: 0.9rem; color: var(--gray-500); transition: color 0.2s; }
+        .footer-links a:hover { color: var(--gold); }
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+        }
+        .footer-bottom a { color: var(--gold); }
+
+        /* ===========================
+           RESPONSIVE
+           =========================== */
+        @media (max-width: 900px) {
+            .nav-links { display: none; }
+            .nav-links.open {
+                display: flex; flex-direction: column;
+                position: absolute; top: 70px; left: 0; right: 0;
+                background: var(--navy);
+                padding: 20px 24px;
+                gap: 16px;
+                border-bottom: 2px solid var(--gold);
+            }
+            .hamburger { display: flex; }
+            .hero-volleyball { display: none; }
+            .hero-stat-strip { gap: 24px; flex-wrap: wrap; }
+            .mission-grid,
+            .gym-grid,
+            .tryout-content,
+            .survey-content,
+            .contact-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+            .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+        }
+        @media (max-width: 600px) {
+            :root { --section-pad: 48px; }
+            .hero h1 { font-size: 2.6rem; }
+            .style-pillars { grid-template-columns: 1fr 1fr; }
+        }
+
+        /* ===========================
+           ANIMATIONS (subtle)
+           =========================== */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(24px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .hero-content { animation: fadeUp 0.8s ease-out; }
+        .hero-stat-strip { animation: fadeUp 0.8s ease-out 0.3s both; }
+    </style>
+</head>
+<body>
+
+<!-- ==================== NAVBAR ==================== -->
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+        <a href="#" class="logo" aria-label="Elite Positive Volleyball home">ELITE <span>POSITIVE</span> VB</a>
+        <div class="nav-links" id="navLinks">
+            <a href="#mission">Mission</a>
+            <a href="#about">Coaches</a>
+            <a href="#open-gym">Open Gym</a>
+            <a href="#tryouts">Tryouts</a>
+            <a href="#survey">Survey</a>
+            <a href="#sponsors">Sponsors</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- ==================== HERO ==================== -->
+<header class="hero" id="home">
+    <div class="hero-pattern"></div>
+    <!-- Decorative volleyball shape -->
+    <svg class="hero-volleyball" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="95" stroke="white" stroke-width="2"/>
+        <path d="M100 5 C100 5, 60 80, 100 100 C140 120, 100 195, 100 195" stroke="white" stroke-width="2" fill="none"/>
+        <path d="M10 60 C10 60, 80 80, 100 100 C120 120, 190 140, 190 140" stroke="white" stroke-width="2" fill="none"/>
+        <path d="M10 140 C10 140, 80 120, 100 100 C120 80, 190 60, 190 60" stroke="white" stroke-width="2" fill="none"/>
+    </svg>
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-badge">🏐 Positive Coaching Alliance</div>
+            <h1>
+                BUILD CHAMPIONS
+                <span class="highlight">THROUGH POSITIVITY</span>
+            </h1>
+            <p>We develop volleyball players at every level—juniors through adults—with coaching that emphasizes encouragement, growth mindset, and competitive excellence.</p>
+            <div class="hero-actions">
+                <a href="#tryouts" class="btn btn-gold">Register for Tryouts</a>
+                <a href="#open-gym" class="btn btn-outline">Open Gym Schedule</a>
+            </div>
+            <div class="hero-stat-strip">
+                <div>
+                    <div class="stat-num">10+</div>
+                    <div class="stat-label">Years Coaching</div>
+                </div>
+                <div>
+                    <div class="stat-num">200+</div>
+                    <div class="stat-label">Athletes Trained</div>
+                </div>
+                <div>
+                    <div class="stat-num">95%</div>
+                    <div class="stat-label">Return Rate</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- ==================== MISSION ==================== -->
+<section class="mission section-pad" id="mission">
+    <div class="container">
+        <div class="text-center" style="margin-bottom:48px;">
+            <div class="section-label">Our Mission</div>
+            <h2 class="section-title">WHY WE COACH</h2>
+        </div>
+        <div class="mission-grid">
+            <div class="mission-quote">
+                "Our mission is to cultivate confident, resilient athletes through positive coaching that values effort over outcome, encourages risk-taking, and builds a lifelong love for the sport of volleyball. Every player deserves to be seen, challenged, and celebrated."
+            </div>
+            <div class="mission-values">
+                <div class="value-card">
+                    <div class="value-icon">💪</div>
+                    <div>
+                        <h4>Growth Over Perfection</h4>
+                        <p>We celebrate effort, learning, and courage. Mistakes are proof that players are pushing their boundaries.</p>
+                    </div>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <div>
+                        <h4>Team-First Culture</h4>
+                        <p>Every drill, every game — we build each other up. Positive communication on and off the court is non-negotiable.</p>
+                    </div>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🏆</div>
+                    <div>
+                        <h4>Competitive Excellence</h4>
+                        <p>Positivity doesn't mean soft. We train hard, compete fearlessly, and pursue excellence together.</p>
+                    </div>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🌟</div>
+                    <div>
+                        <h4>Every Player Matters</h4>
+                        <p>Regardless of skill level, every athlete gets coaching attention, playing time philosophy, and genuine investment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== ABOUT / COACHES ==================== -->
+<section class="about section-pad" id="about">
+    <div class="container">
+        <div class="text-center">
+            <div class="section-label">Meet the Team</div>
+            <h2 class="section-title">OUR COACHES</h2>
+            <p class="section-subtitle">Experienced coaches who believe the best results come from athletes who feel empowered, supported, and challenged.</p>
+        </div>
+
+        <div class="coaches-grid">
+            <!-- COACH 1 — Replace with your info -->
+            <div class="coach-card">
+                <div class="coach-img">
+                    <div class="placeholder-icon">🏐</div>
+                    <!-- Replace with: <img src="coach1.jpg" alt="Coach Name headshot"> -->
+                </div>
+                <div class="coach-body">
+                    <h3>Coach First Last</h3>
+                    <div class="coach-role">Head Coach · Founder</div>
+                    <p>15+ years of coaching experience at club and high school levels. USAV CAP II certified. Passionate about developing athletes who love the game and compete with confidence.</p>
+                </div>
+            </div>
+
+            <!-- COACH 2 -->
+            <div class="coach-card">
+                <div class="coach-img">
+                    <div class="placeholder-icon">🏐</div>
+                </div>
+                <div class="coach-body">
+                    <h3>Coach First Last</h3>
+                    <div class="coach-role">Assistant Coach · Skills Specialist</div>
+                    <p>Former D1 player with a passion for teaching technical fundamentals in an encouraging environment. Specializes in setting and defensive systems.</p>
+                </div>
+            </div>
+
+            <!-- COACH 3 -->
+            <div class="coach-card">
+                <div class="coach-img">
+                    <div class="placeholder-icon">🏐</div>
+                </div>
+                <div class="coach-body">
+                    <h3>Coach First Last</h3>
+                    <div class="coach-role">Youth Development Coach</div>
+                    <p>Dedicated to introducing young athletes to volleyball through fun, structured training that builds coordination, confidence, and teamwork from day one.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coaching Style -->
+        <div class="coaching-style">
+            <h3>OUR COACHING PHILOSOPHY</h3>
+            <p>We follow the principles of positive coaching — an evidence-based approach that produces better athletic outcomes AND better human beings. Our athletes learn to embrace challenges, support teammates, and compete with joy.</p>
+            <div class="style-pillars">
+                <div class="pillar">
+                    <div class="pillar-num">01</div>
+                    <h4>Encourage Effort</h4>
+                    <p>Process over results. We praise hustle, improvement, and grit.</p>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-num">02</div>
+                    <h4>Redefine "Winning"</h4>
+                    <p>Winning is giving maximum effort and being a great teammate.</p>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-num">03</div>
+                    <h4>Fill Emotional Tanks</h4>
+                    <p>5:1 praise-to-correction ratio. Full tanks = fearless players.</p>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-num">04</div>
+                    <h4>Honor the Game</h4>
+                    <p>Respect rules, opponents, officials, teammates, and yourself.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== OPEN GYM ==================== -->
+<section class="open-gym section-pad" id="open-gym">
+    <div class="container">
+        <div class="text-center">
+            <div class="section-label">Drop-In Sessions</div>
+            <h2 class="section-title">OPEN GYM</h2>
+            <p class="section-subtitle">Structured open gym sessions for all levels. Show up, warm up, and play. Coached environment with positive vibes.</p>
+        </div>
+        <div class="gym-grid">
+            <!-- JUNIORS -->
+            <div class="gym-card">
+                <div class="gym-header juniors">
+                    <div class="gym-tag">Ages 10–17</div>
+                    <h3>JUNIORS OPEN GYM</h3>
+                    <p>Skill-focused sessions with drills, games, and coached play. A safe space to develop skills, make friends, and fall in love with volleyball.</p>
+                </div>
+                <div class="gym-details">
+                    <div class="gym-detail">
+                        <div class="icon">📅</div>
+                        <div><strong>Saturdays</strong> — 9:00 AM to 11:00 AM</div>
+                    </div>
+                    <div class="gym-detail">
+                        <div class="icon">📍</div>
+                        <div><strong>Venue Name</strong> — 123 Court St, Your City</div>
+                    </div>
+                    <div class="gym-detail">
+                        <div class="icon">💲</div>
+                        <div><strong>$10 drop-in</strong> / $35 monthly pass</div>
+                    </div>
+                    <div class="gym-detail">
+                        <div class="icon">📋</div>
+                        <div>Waiver required — <a href="#contact" style="color:var(--gold);text-decoration:underline;">contact us</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ADULTS -->
+            <div class="gym-card">
+                <div class="gym-header adults">
+                    <div class="gym-tag">Ages 18+</div>
+                    <h3>ADULTS OPEN GYM</h3>
+                    <p>Competitive and recreational play for adults of all skill levels. Rotating teams, rally scoring, and a positive atmosphere every night.</p>
+                </div>
+                <div class="gym-details">
+                    <div class="gym-detail">
+                        <div class="icon">📅</div>
+                        <div><strong>Wednesdays</strong> — 7:00 PM to 9:30 PM</div>
+                    </div>
+                    <div class="gym-detail">
+                        <div class="icon">📍</div>
+                        <div><strong>Venue Name</strong> — 123 Court St, Your City</div>
+                    </div>
+                    <div class="gym-detail">
+                        <div class="icon">💲</div>
+                        <div><strong>$12 drop-in</strong> / $40 monthly pass</div>
+                    </div>
+                    <div class="gym-detail">
+                        <div class="icon">📋</div>
+                        <div>All levels welcome — no experience needed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== TRYOUTS ==================== -->
+<section class="tryouts section-pad" id="tryouts">
+    <div class="container">
+        <div class="text-center" style="margin-bottom:48px;">
+            <div class="section-label" style="color:var(--gold);">Join the Team</div>
+            <h2 class="section-title light">TRYOUT REGISTRATION</h2>
+        </div>
+        <div class="tryout-content">
+            <div class="tryout-info">
+                <p>Our tryout process is designed to evaluate every athlete fairly while making the experience positive and encouraging. We look for effort, coachability, and attitude just as much as skill.</p>
+
+                <h3>WHAT TO EXPECT</h3>
+                <ul>
+                    <li>Warm-up and dynamic stretching</li>
+                    <li>Individual skill stations (passing, setting, hitting, serving)</li>
+                    <li>Small-group drills and game-play scenarios</li>
+                    <li>Coaches evaluate effort, attitude, and skill</li>
+                    <li>Every athlete receives written feedback within 48 hours</li>
+                </ul>
+
+                <h3>WHAT TO BRING</h3>
+                <ul>
+                    <li>Court shoes (no running shoes)</li>
+                    <li>Knee pads recommended</li>
+                    <li>Water bottle</li>
+                    <li>Positive attitude — nerves are normal!</li>
+                </ul>
+
+                <h3>AGE VERIFICATION</h3>
+                <p>Need to confirm your player's age division? Use the official HOA age calculator:</p>
+                <!-- UPDATE this URL to the correct HOA age calculator -->
+                <a href="https://www.usav.org/age-definition" target="_blank" rel="noopener" class="age-calc-link">
+                    🔗 HOA / USAV Age Calculator
+                </a>
+            </div>
+
+            <div class="tryout-form-wrapper">
+                <h3>REGISTER NOW</h3>
+                <p>Complete the Google Form below to register for tryouts. You'll receive a confirmation email with details.</p>
+
+                <!-- ===== GOOGLE FORM EMBED ===== -->
+                <!-- Replace YOUR_TRYOUT_FORM_ID with your actual Google Form ID -->
+                <!-- Example: https://docs.google.com/forms/d/e/FORM_ID/viewform?embedded=true -->
+                <div class="form-embed">
+                    <div class="form-embed-header">📝 Tryout Registration Form</div>
+                    <!--
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/YOUR_TRYOUT_FORM_ID/viewform?embedded=true"
+                        title="Tryout Registration Form"
+                        loading="lazy">
+                    </iframe>
+                    -->
+                    <div class="form-placeholder">
+                        <div class="icon">📝</div>
+                        <p>Google Form will appear here once you add your Form ID</p>
+                        <code>YOUR_TRYOUT_FORM_ID</code>
+                    </div>
+                </div>
+
+                <!-- reCAPTCHA (uncomment when ready) -->
+                <!--
+                <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY" style="margin-top:16px;"></div>
+                -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== PLAYER SURVEY ==================== -->
+<section class="survey section-pad" id="survey">
+    <div class="container">
+        <div class="text-center" style="margin-bottom:48px;">
+            <div class="section-label">Your Voice Matters</div>
+            <h2 class="section-title">PLAYER SURVEY</h2>
+        </div>
+        <div class="survey-content">
+            <div class="survey-info">
+                <p>We want to hear from our players and families. Your feedback directly shapes our coaching, scheduling, and program direction. This survey is anonymous and takes about 3 minutes.</p>
+                <div class="survey-benefits">
+                    <div class="benefit">
+                        <div class="benefit-check">✓</div>
+                        <p><strong>Rate your experience</strong> — coaching quality, facility, communication</p>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit-check">✓</div>
+                        <p><strong>Share suggestions</strong> — schedule changes, new programs, equipment needs</p>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit-check">✓</div>
+                        <p><strong>Help us improve</strong> — your feedback drives real changes every season</p>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit-check">✓</div>
+                        <p><strong>100% anonymous</strong> — be as honest as you want</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-embed">
+                <div class="form-embed-header">📊 Player & Family Survey</div>
+                <!--
+                <iframe
+                    src="https://docs.google.com/forms/d/e/YOUR_SURVEY_FORM_ID/viewform?embedded=true"
+                    title="Player Survey Form"
+                    loading="lazy">
+                </iframe>
+                -->
+                <div class="form-placeholder">
+                    <div class="icon">📊</div>
+                    <p>Google Form will appear here once you add your Form ID</p>
+                    <code>YOUR_SURVEY_FORM_ID</code>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== SPONSORS ==================== -->
+<section class="sponsors section-pad" id="sponsors">
+    <div class="container">
+        <div class="text-center">
+            <div class="section-label">Our Partners</div>
+            <h2 class="section-title">SPONSORS & SUPPORTERS</h2>
+            <p class="section-subtitle">These organizations make our programs possible. Their support keeps registration affordable and our facilities top-notch.</p>
+        </div>
+
+        <div class="sponsor-tiers">
+            <!-- GOLD -->
+            <div>
+                <div class="tier-label"><span class="badge gold-tier">Gold</span> Premier Sponsors</div>
+                <div class="sponsor-logos">
+                    <div class="sponsor-slot">Your Logo Here</div>
+                    <div class="sponsor-slot">Your Logo Here</div>
+                    <div class="sponsor-slot">Your Logo Here</div>
+                </div>
+            </div>
+            <!-- SILVER -->
+            <div>
+                <div class="tier-label"><span class="badge silver-tier">Silver</span> Supporting Sponsors</div>
+                <div class="sponsor-logos">
+                    <div class="sponsor-slot">Your Logo Here</div>
+                    <div class="sponsor-slot">Your Logo Here</div>
+                    <div class="sponsor-slot">Your Logo Here</div>
+                    <div class="sponsor-slot">Your Logo Here</div>
+                </div>
+            </div>
+            <!-- BRONZE -->
+            <div>
+                <div class="tier-label"><span class="badge bronze-tier">Bronze</span> Community Partners</div>
+                <div class="sponsor-logos">
+                    <div class="sponsor-slot">Your Logo Here</div>
+                    <div class="sponsor-slot">Your Logo Here</div>
+                    <div class="sponsor-slot">Your Logo Here</div>
+                    <div class="sponsor-slot">Your Logo Here</div>
+                    <div class="sponsor-slot">Your Logo Here</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sponsor-cta">
+            <h3>BECOME A SPONSOR</h3>
+            <p>Support youth and adult athletics in our community. Sponsorships start at $100/season and include logo placement, event recognition, and social media shoutouts.</p>
+            <a href="#contact" class="btn btn-navy">Get Sponsor Info</a>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== CONTACT ==================== -->
+<section class="contact section-pad" id="contact">
+    <div class="container">
+        <div class="text-center" style="margin-bottom:48px;">
+            <div class="section-label">Get In Touch</div>
+            <h2 class="section-title">CONTACT US</h2>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>your-email@example.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div>
+                        <h4>Phone / Text</h4>
+                        <p>(555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Your City, Your State<br>Practice at: Venue Name, 123 Court St</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🔗</div>
+                    <div>
+                        <h4>Social & GitHub</h4>
+                        <p>
+                            <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">GitHub</a>
+                            <!-- Add more social links as needed -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTACT FORM (Google Form) -->
+            <div class="form-embed">
+                <div class="form-embed-header">✉️ Send Us a Message</div>
+                <!--
+                <iframe
+                    src="https://docs.google.com/forms/d/e/YOUR_CONTACT_FORM_ID/viewform?embedded=true"
+                    title="Contact Form"
+                    loading="lazy">
+                </iframe>
+                -->
+                <div class="form-placeholder">
+                    <div class="icon">✉️</div>
+                    <p>Google Form will appear here once you add your Form ID</p>
+                    <code>YOUR_CONTACT_FORM_ID</code>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">ELITE <span>POSITIVE</span> VB</div>
+                <p>Building confident, resilient athletes through positive coaching. Juniors and adults welcome — every level, every background.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <div class="footer-links">
+                    <a href="#mission">Mission</a>
+                    <a href="#about">Coaches</a>
+                    <a href="#open-gym">Open Gym</a>
+                    <a href="#tryouts">Tryouts</a>
+                    <a href="#survey">Player Survey</a>
+                </div>
+            </div>
+            <div>
+                <h4>Resources</h4>
+                <div class="footer-links">
+                    <a href="#sponsors">Sponsors</a>
+                    <a href="#contact">Contact</a>
+                    <a href="https://www.usav.org/age-definition" target="_blank" rel="noopener">HOA Age Calculator ↗</a>
+                    <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" rel="noopener">GitHub ↗</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Elite Positive Volleyball. All rights reserved.</p>
+            <p>Built with 🏐 and hosted on <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a></p>
+        </div>
+    </div>
+</footer>
+
+<!-- ==================== JS ==================== -->
+<script>
+    // Mobile menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+        hamburger.setAttribute('aria-expanded', navLinks.classList.contains('open'));
+    });
+    // Close menu on link click
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('open');
+            hamburger.setAttribute('aria-expanded', 'false');
+        });
+    });
+</script>
+
+</body>
+</html>
