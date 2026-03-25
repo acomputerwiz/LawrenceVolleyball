@@ -403,7 +403,7 @@ ul { list-style: none; }
     text-align: center;
 }
 .pillar-num { font-family: var(--font-display); font-size: 2.5rem; color: var(--gold); }
-.pillar h4 { font-family: var(--font-heading); font-weight: 700; font-size: 1rem; margin: 8px 0 4px; color: var(--white); }
+.pillar h4 { font-family: var(--font-heading); font-weight: 700; font-size: 1rem; margin: 0 0 6px; color: var(--white); }
 .pillar p { font-size: 0.85rem; color: var(--gray-500); }
 
 /* ===========================
@@ -806,7 +806,7 @@ ul { list-style: none; }
     .hero p { font-size: 1rem; }
     .hero-actions { flex-direction: column; gap: 12px; }
     .hero-actions .btn { width: 100%; text-align: center; padding: 16px 24px; }
-    .style-pillars { grid-template-columns: 1fr 1fr; }
+    .style-pillars { grid-template-columns: 1fr; }
     .subscribe-steps { grid-template-columns: 1fr; }
     .sponsor-benefits-grid { grid-template-columns: 1fr 1fr; }
     .btn { padding: 14px 24px; font-size: 0.95rem; }
