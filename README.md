@@ -1,129 +1,141 @@
-# Elite Positive Volleyball — Website
+# Elevate Volleyball — LawrenceVolleyball.com
 
-A single-page volleyball coaching website built with plain HTML/CSS. Designed for GitHub Pages hosting with embedded Google Forms.
+Multi-page volleyball coaching website for Lawrence, KS. Plain HTML + CSS, GitHub Pages hosted, with clean URLs at `LawrenceVolleyball.com`.
 
-## Quick Start — GitHub Pages Deployment
-
-### 1. Create the Repository
-```bash
-# On github.com: create a new repo called "elite-positive-volleyball"
-# Then locally:
-git clone https://github.com/YOUR-USERNAME/elite-positive-volleyball.git
-cd elite-positive-volleyball
+## Clean URL Structure
 ```
-
-### 2. Add Your Files
-```bash
-# Copy index.html into the repo root
-cp /path/to/index.html .
-git add .
-git commit -m "Initial site launch"
-git push origin main
+LawrenceVolleyball.com/             → Home (mission, ELEVATE acronym, open gym, survey, contact)
+LawrenceVolleyball.com/coaches/     → Coach profiles, philosophy, what parents can expect
+LawrenceVolleyball.com/tryouts/     → Tryout registration + FAQ + HOA age calculator
+LawrenceVolleyball.com/schedule/    → Google Calendar embed + subscribe instructions
+LawrenceVolleyball.com/sponsors/    → Tiered sponsor logos + become-a-sponsor CTA
 ```
-
-### 3. Enable GitHub Pages
-1. Go to **Settings → Pages** in your repo
-2. Under **Source**, select **Deploy from a branch**
-3. Select **main** branch, **/ (root)** folder
-4. Click **Save**
-5. Your site will be live at: `https://YOUR-USERNAME.github.io/elite-positive-volleyball/`
-
----
-
-## Customization Checklist
-
-### Replace Placeholder Values
-Search the `index.html` file for these strings and replace them:
-
-| Placeholder | Replace With |
-|---|---|
-| `YOUR-GITHUB-USERNAME` | Your actual GitHub username |
-| `YOUR_TRYOUT_FORM_ID` | Google Form ID for tryout registration |
-| `YOUR_SURVEY_FORM_ID` | Google Form ID for player survey |
-| `YOUR_CONTACT_FORM_ID` | Google Form ID for contact form |
-| `YOUR_RECAPTCHA_SITE_KEY` | Your Google reCAPTCHA v2 site key |
-| `your-email@example.com` | Your contact email |
-| `(555) 123-4567` | Your phone number |
-| `Your City, Your State` | Actual city and state |
-| `00.0000;-00.0000` | Actual lat/long coordinates |
-| `00000` | Actual zip code |
-| Coach names and bios | Your real coaching staff info |
-| Venue Name / address | Your real practice facility |
-| Schedule days/times | Your actual open gym schedule |
-
-### Embedding Google Forms
-1. Open your Google Form
-2. Click **Send** → click the `< >` embed icon
-3. Copy the `src="..."` URL (looks like `https://docs.google.com/forms/d/e/XXXXX/viewform?embedded=true`)
-4. In `index.html`, uncomment the `<iframe>` tag and paste the URL
-5. Delete or comment out the `.form-placeholder` div
-
-### Adding reCAPTCHA
-Google Forms have their own CAPTCHA built-in. If you want an extra layer:
-1. Register at [Google reCAPTCHA](https://www.google.com/recaptcha/admin)
-2. Choose **reCAPTCHA v2** ("I'm not a robot" checkbox)
-3. Add your GitHub Pages domain to allowed domains
-4. Uncomment the reCAPTCHA script tag in `<head>`
-5. Uncomment the `g-recaptcha` div in the tryout section
-6. Replace `YOUR_RECAPTCHA_SITE_KEY` with your actual key
-
-> **Note:** reCAPTCHA on a static site only works as a visual deterrent unless you process form submissions through a server. Since you're using Google Forms (which handle spam protection internally), this is optional.
-
-### Adding Coach Photos
-Replace the placeholder `<div class="coach-img">` contents with actual images:
-```html
-<div class="coach-img">
-    <img src="images/coach-name.jpg" alt="Coach Name headshot" style="width:100%;height:100%;object-fit:cover;">
-</div>
-```
-
-### Adding Sponsor Logos
-Replace `.sponsor-slot` divs:
-```html
-<div class="sponsor-slot">
-    <img src="images/sponsor-logo.png" alt="Sponsor Name" style="max-height:60px;">
-</div>
-```
-
-### HOA Age Calculator Link
-The default links to `https://www.usav.org/age-definition`. Update this to your region's specific HOA age calculator if different.
-
----
-
-## SEO & Geo Optimization (Already Included)
-
-- **Meta title & description** — targeted volleyball coaching keywords
-- **Open Graph / Twitter cards** — social media preview optimization
-- **JSON-LD structured data** — `SportsOrganization` schema for rich search results
-- **Geo meta tags** — `geo.region`, `geo.placename`, `geo.position`, `ICBM`
-- **Canonical URL** — prevents duplicate content issues
-- **Semantic HTML** — proper `<header>`, `<nav>`, `<section>`, `<footer>` tags
-- **Alt text ready** — add descriptive alt text to all images
-- **Mobile responsive** — Google's mobile-first indexing compliant
-
-### To Maximize Local SEO
-1. **Fill in real geo coordinates** (use Google Maps to find lat/long)
-2. **Create a Google Business Profile** and link to this site
-3. **Add an `og-image.jpg`** (1200×630px) to the repo root for social previews
-4. **Register with Google Search Console** and submit your sitemap
-
----
 
 ## File Structure
 ```
-elite-positive-volleyball/
-├── index.html          # Complete website (single file)
-├── README.md           # This file
-├── og-image.jpg        # Social media preview image (add this)
-└── images/             # Coach photos, sponsor logos (create this)
-    ├── coach-1.jpg
-    ├── coach-2.jpg
-    └── sponsor-logo.png
+elevate-volleyball/
+├── CNAME                       # Tells GitHub Pages to use LawrenceVolleyball.com
+├── index.html                  # Home page
+├── styles.css                  # Shared stylesheet
+├── og-image.jpg                # Social preview image 1200x630px (add this)
+├── coaches/
+│   └── index.html              # → LawrenceVolleyball.com/coaches/
+├── tryouts/
+│   └── index.html              # → LawrenceVolleyball.com/tryouts/
+├── schedule/
+│   └── index.html              # → LawrenceVolleyball.com/schedule/
+├── sponsors/
+│   └── index.html              # → LawrenceVolleyball.com/sponsors/
+└── images/                     # Coach photos, sponsor logos (create this)
 ```
 
+## Deploy to GitHub Pages
+
+### 1. Create Repo & Push
+```bash
+git clone https://github.com/YOUR-USERNAME/elevate-volleyball.git
+cd elevate-volleyball
+# copy all files/folders into the repo maintaining the structure above
+git add .
+git commit -m "Launch Elevate VB — LawrenceVolleyball.com"
+git push origin main
+```
+
+### 2. Enable GitHub Pages
+1. Repo → **Settings → Pages**
+2. Source: **Deploy from a branch** → **main** / **/ (root)**
+3. Click **Save**
+
+### 3. Connect LawrenceVolleyball.com
+
+**At your domain registrar (Namecheap, Cloudflare, GoDaddy, etc.):**
+
+Add these DNS records:
+
+| Type  | Host/Name | Value                        |
+|-------|-----------|------------------------------|
+| A     | @         | 185.199.108.153              |
+| A     | @         | 185.199.109.153              |
+| A     | @         | 185.199.110.153              |
+| A     | @         | 185.199.111.153              |
+| CNAME | www       | YOUR-USERNAME.github.io      |
+
+These are GitHub Pages' official IP addresses documented at:
+https://docs.github.com/en/pages/configuring-a-custom-domain-for-github-pages/managing-a-custom-domain-for-your-github-pages-site
+
+**Back in GitHub:**
+1. Settings → Pages → **Custom domain** → type `LawrenceVolleyball.com` → Save
+2. Check **Enforce HTTPS** (may take a few minutes to become available)
+3. The `CNAME` file in the repo ensures the setting persists across deploys
+
+**DNS propagation takes 10 minutes to 48 hours.** You can check status at https://dnschecker.org
+
+## Customization Checklist
+
+### Find & Replace
+
+| Placeholder | Replace With |
+|---|---|
+| `YOUR-GITHUB-USERNAME` | Your GitHub username |
+| `YOUR_TRYOUT_FORM_ID` | Google Form ID — tryout registration |
+| `YOUR_SURVEY_FORM_ID` | Google Form ID — player survey |
+| `YOUR_CONTACT_FORM_ID` | Google Form ID — contact form |
+| `YOUR_CALENDAR_ID` | Public Google Calendar ID |
+| `YOUR_RECAPTCHA_SITE_KEY` | reCAPTCHA v2 site key (optional) |
+| `your-email@example.com` | Your real email |
+| `(785) 555-0000` | Your real phone number |
+| `Venue Name` | Your actual practice facility |
+| Coach names/bios | Your real coaching staff |
+| Schedule days/times | Your actual session times |
+
+### Embed Google Forms
+1. Open your Google Form → **Send** → `<>` embed icon
+2. Copy the `src` URL
+3. In the relevant HTML file, uncomment the `<iframe>`, paste URL
+4. Delete the `.form-placeholder` div
+
+### Embed Google Calendar
+1. Google Calendar → **Settings** → your calendar
+2. **Access permissions** → check **Make available to public**
+3. **Integrate calendar** → copy the **Calendar ID**
+4. In `schedule/index.html`, replace `YOUR_CALENDAR_ID` in all 3 spots:
+   - The `<iframe>` src
+   - The subscribe button href
+   - The iCal URL in subscribe instructions
+5. Uncomment the `<iframe>`, delete the placeholder
+
+The `.ics` subscribe URL format:
+```
+https://calendar.google.com/calendar/ical/YOUR_CALENDAR_ID/public/basic.ics
+```
+
+### reCAPTCHA (Optional)
+Google Forms already handle spam. If you want extra protection on the tryouts page:
+1. Register at https://www.google.com/recaptcha/admin → v2 checkbox
+2. Add `LawrenceVolleyball.com` to allowed domains
+3. Uncomment the script + div in `tryouts/index.html`
+4. Replace `YOUR_RECAPTCHA_SITE_KEY`
+
+## SEO & Geo (Built In)
+
+Every page includes: targeted meta titles/descriptions with Lawrence KS keywords, Open Graph + Twitter cards, JSON-LD structured data (`SportsOrganization` on home, `SportsEvent` on tryouts), geo meta tags for Lawrence KS (38.9717, -95.2353), canonical URLs at LawrenceVolleyball.com, semantic HTML5, and mobile responsive design.
+
+**ELEVATE Acronym** (featured on home + coaches pages):
+**E**nergy · **L**eadership · **E**ffort · **V**ision · **A**gility · **T**eamwork · **E**xcellence
+
+**Separate pages = separate rankings.** The tryouts page targets "volleyball tryouts Lawrence KS" while the schedule page targets "volleyball schedule Lawrence Kansas" — each ranks independently.
+
+### Maximize Local SEO
+1. Create a **Google Business Profile** → link to LawrenceVolleyball.com
+2. Register with **Google Search Console** → submit sitemap
+3. Get listed on **Lawrence Chamber of Commerce**, **KVA**, local directories
+4. Add real photos with descriptive alt text
+5. Create the `og-image.jpg` (1200x630px) for social sharing previews
+
 ## Tech Stack
-- **HTML5** + **CSS3** (no frameworks, no build step)
-- **Google Fonts** (Bebas Neue + Barlow)
-- **Google Forms** (embedded iframes)
-- **GitHub Pages** (free hosting)
-- **Google reCAPTCHA v2** (optional)
+- HTML5 + CSS3 (no build step)
+- Google Fonts (Bebas Neue + Barlow)
+- Google Forms (embedded iframes)
+- Google Calendar (embedded + subscribable via iCal)
+- GitHub Pages (free hosting)
+- Custom domain via CNAME + A records
