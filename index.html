@@ -4,55 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Tryouts | Elevate Volleyball — Lawrence, KS</title>
-    <meta name="description" content="Register for Elevate Volleyball 12U and 15U tryouts in Lawrence, Kansas. Back-to-back sessions, positive environment, fair evaluations focused on effort, coachability, and attitude.">
-    <meta name="keywords" content="volleyball tryouts Lawrence KS, youth volleyball tryouts Kansas, Elevate Volleyball tryouts, club volleyball Lawrence Kansas, 12U volleyball tryouts, 15U volleyball tryouts">
+    <!-- SEO -->
+    <title>Elevate Volleyball | Positive Coaching in Lawrence, KS</title>
+    <meta name="description" content="Elevate Volleyball in Lawrence, Kansas — elite coaching for juniors and adults built on encouragement, growth mindset, and competitive excellence. Open gyms, tryouts, clinics, and camps.">
+    <meta name="keywords" content="volleyball Lawrence KS, volleyball coaching Lawrence Kansas, youth volleyball Lawrence, adult volleyball Lawrence, open gym volleyball Lawrence KS, volleyball tryouts Lawrence, Elevate Volleyball, positive coaching volleyball Kansas, LawrenceVolleyball">
+    <meta name="author" content="Elevate Volleyball">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://LawrenceVolleyball.com/tryouts/">
+    <link rel="canonical" href="https://LawrenceVolleyball.com/">
 
+    <!-- GEO — Lawrence, Kansas -->
     <meta name="geo.region" content="US-KS">
     <meta name="geo.placename" content="Lawrence, Kansas">
     <meta name="geo.position" content="38.9717;-95.2353">
     <meta name="ICBM" content="38.9717, -95.2353">
 
-    <meta property="og:title" content="Tryouts | Elevate Volleyball — Lawrence, KS">
-    <meta property="og:description" content="Register for volleyball tryouts in Lawrence, Kansas. Positive environment, fair evaluations, written feedback for every athlete.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Elevate Volleyball | Positive Coaching in Lawrence, KS">
+    <meta property="og:description" content="Elite volleyball coaching for juniors and adults in Lawrence, Kansas. Built on positivity, growth, and competitive excellence.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://LawrenceVolleyball.com/tryouts/">
+    <meta property="og:url" content="https://LawrenceVolleyball.com/">
+    <meta property="og:image" content="https://LawrenceVolleyball.com/og-image.jpg">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
 
+    <!-- Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "SportsEvent",
-        "name": "Elevate Volleyball Tryouts",
-        "description": "12U and 15U tryouts for Elevate Volleyball in Lawrence, Kansas. Back-to-back sessions on the same day with 15 minutes between. Positive coaching environment.",
+        "@type": "SportsOrganization",
+        "name": "Elevate Volleyball",
+        "description": "Elite volleyball coaching for juniors and adults in Lawrence, Kansas. Positive coaching, open gyms, tryouts, clinics, and camps.",
+        "url": "https://LawrenceVolleyball.com/",
         "sport": "Volleyball",
-        "location": {
-            "@type": "Place",
-            "name": "Venue Name",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Lawrence",
-                "addressRegion": "KS",
-                "postalCode": "66044",
-                "addressCountry": "US"
-            }
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Lawrence",
+            "addressRegion": "KS",
+            "postalCode": "66044",
+            "addressCountry": "US"
         },
-        "organizer": {
-            "@type": "SportsOrganization",
-            "name": "Elevate Volleyball",
-            "url": "https://LawrenceVolleyball.com/"
-        }
+        "areaServed": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": 38.9717,
+                "longitude": -95.2353
+            },
+            "geoRadius": "50000"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "General Inquiry",
+            "email": "acomputerwiz+elevate@gmail.com"
+        },
+        "sameAs": [
+            "https://github.com/acomputerwiz"
+        ]
     }
     </script>
 
+    <!-- Fonts & Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
-
-    <!-- reCAPTCHA (uncomment when ready) -->
-    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
 </head>
 <body>
 
@@ -61,14 +76,14 @@
     <div class="container">
         <a href="/" class="logo"><span>ELEVATE</span> VB</a>
         <div class="nav-links" id="navLinks">
-            <a href="/">Home</a>
+            <a href="/" class="active">Home</a>
             <a href="/coaches/">Coaches</a>
-            <a href="/#open-gym">Open Gym</a>
+            <a href="#open-gym">Open Gym</a>
             <a href="/schedule/">Schedule</a>
-            <a href="/tryouts/" class="active">Tryouts</a>
-            <a href="/#survey">Survey</a>
+            <a href="/tryouts/">Tryouts</a>
+            <a href="#survey">Survey</a>
             <a href="/sponsors/">Sponsors</a>
-            <a href="/#contact">Contact</a>
+            <a href="#contact">Contact</a>
         </div>
         <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
             <span></span><span></span><span></span>
@@ -76,118 +91,239 @@
     </div>
 </nav>
 
-<!-- PAGE HERO -->
-<section class="page-hero">
+<!-- HERO -->
+<header class="hero" id="home">
+    <div class="hero-pattern"></div>
+    <svg class="hero-volleyball" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="95" stroke="white" stroke-width="2"/>
+        <path d="M100 5 C100 5, 60 80, 100 100 C140 120, 100 195, 100 195" stroke="white" stroke-width="2" fill="none"/>
+        <path d="M10 60 C10 60, 80 80, 100 100 C120 120, 190 140, 190 140" stroke="white" stroke-width="2" fill="none"/>
+        <path d="M10 140 C10 140, 80 120, 100 100 C120 80, 190 60, 190 60" stroke="white" stroke-width="2" fill="none"/>
+    </svg>
     <div class="container">
-        <div class="section-label">Join the Team</div>
-        <h1 class="section-title light" style="font-size:clamp(2.5rem,6vw,4rem);">TRYOUT REGISTRATION</h1>
-        <p>12U and 15U tryouts — back-to-back on the same day. We look for effort, coachability, and attitude just as much as skill.</p>
+        <div class="hero-content">
+            <div class="hero-badge">🏐 Lawrence, Kansas</div>
+            <h1>
+                ELEVATE YOUR
+                <span class="highlight">GAME & CHARACTER</span>
+            </h1>
+            <p>We develop volleyball players at every level — juniors through adults — with coaching that emphasizes encouragement, growth mindset, and competitive excellence in Lawrence, KS.</p>
+            <div class="hero-actions">
+                <a href="/tryouts/" class="btn btn-gold">Register for Tryouts</a>
+                <a href="/schedule/" class="btn btn-outline">View Schedule</a>
+            </div>
+            <div class="hero-stat-strip">
+                <div>
+                    <div class="stat-num">10+</div>
+                    <div class="stat-label">Years Coaching</div>
+                </div>
+                <div>
+                    <div class="stat-num">200+</div>
+                    <div class="stat-label">Athletes Trained</div>
+                </div>
+                <div>
+                    <div class="stat-num">95%</div>
+                    <div class="stat-label">Return Rate</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- MISSION -->
+<section class="mission section-pad" id="mission">
+    <div class="container">
+        <div class="text-center mb-48">
+            <div class="section-label">Our Mission</div>
+            <h2 class="section-title">WHY WE ELEVATE</h2>
+        </div>
+        <div class="mission-grid">
+            <div class="mission-quote">
+                "Our mission is to cultivate confident, resilient athletes through positive coaching that values effort over outcome, encourages risk-taking, and builds a lifelong love for the sport of volleyball. Every player who walks into our gym in Lawrence deserves to be seen, challenged, and celebrated."
+            </div>
+            <div class="mission-values">
+                <div class="value-card">
+                    <div class="value-icon">💪</div>
+                    <div>
+                        <h4>Growth Over Perfection</h4>
+                        <p>We celebrate effort, learning, and courage. Mistakes are proof that players are pushing their boundaries.</p>
+                    </div>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <div>
+                        <h4>Team-First Culture</h4>
+                        <p>Every drill, every game — we build each other up. Positive communication on and off the court is non-negotiable.</p>
+                    </div>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🏆</div>
+                    <div>
+                        <h4>Competitive Excellence</h4>
+                        <p>Positivity doesn't mean soft. We train hard, compete fearlessly, and pursue excellence together.</p>
+                    </div>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🌟</div>
+                    <div>
+                        <h4>Every Player Matters</h4>
+                        <p>Regardless of skill level, every athlete gets coaching attention, playing time philosophy, and genuine investment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
-<!-- TRYOUT CONTENT -->
-<section class="section-pad" style="background:var(--white);">
+<!-- ELEVATE ACRONYM + COACHES TEASER -->
+<section class="section-pad" style="background:var(--navy);">
     <div class="container">
-        <div class="tryout-content">
-            <div class="tryout-info">
-                <p>Elevate is holding tryouts to build our <strong>12U and 15U teams</strong> for the upcoming season. Both sessions run back-to-back on the same day with a 15-minute break between. We evaluate every athlete fairly in a positive, encouraging environment. Nerves are normal — we want to see your best effort, not perfection.</p>
-
-                <h3>TRYOUT SCHEDULE</h3>
-                <div style="display:flex; flex-direction:column; gap:12px; margin:12px 0 24px;">
-                    <div style="padding:16px 20px; background:rgba(240,165,0,0.1); border-left:4px solid var(--gold); border-radius:0 8px 8px 0;">
-                        <div style="font-family:var(--font-heading); font-weight:700; font-size:1rem; color:var(--navy); margin-bottom:2px;">SESSION 1 — 12U TRYOUT</div>
-                        <div style="font-size:0.92rem; color:var(--gray-500);">Date TBD &nbsp;·&nbsp; Time TBD &nbsp;·&nbsp; Venue Name, Lawrence KS</div>
-                    </div>
-                    <div style="padding:8px 20px; text-align:center; font-family:var(--font-heading); font-weight:700; font-size:0.8rem; letter-spacing:1.5px; text-transform:uppercase; color:var(--gray-500);">⏱ 15 Minute Break</div>
-                    <div style="padding:16px 20px; background:rgba(10,22,40,0.06); border-left:4px solid var(--navy); border-radius:0 8px 8px 0;">
-                        <div style="font-family:var(--font-heading); font-weight:700; font-size:1rem; color:var(--navy); margin-bottom:2px;">SESSION 2 — 15U TRYOUT</div>
-                        <div style="font-size:0.92rem; color:var(--gray-500);">Same day &nbsp;·&nbsp; Immediately following 12U &nbsp;·&nbsp; Same location</div>
-                    </div>
-                </div>
-                <p style="font-size:0.88rem; color:var(--gray-500); font-style:italic;">Exact dates and times will be announced soon. Subscribe to our <a href="/schedule/" style="color:var(--gold); text-decoration:underline;">Google Calendar</a> to get notified automatically.</p>
-
-                <h3>WHAT TO EXPECT</h3>
-                <ul>
-                    <li>Warm-up and dynamic stretching</li>
-                    <li>Individual skill stations (passing, setting, hitting, serving)</li>
-                    <li>Small-group drills and game-play scenarios</li>
-                    <li>Coaches evaluate effort, attitude, and skill equally</li>
-                    <li>Every athlete receives feedback after tryouts</li>
-                </ul>
-
-                <h3>WHAT TO BRING</h3>
-                <ul>
-                    <li>Court shoes (no running shoes)</li>
-                    <li>Knee pads recommended</li>
-                    <li>Water bottle</li>
-                    <li>Positive attitude — nerves are normal!</li>
-                </ul>
-
-                <h3>TRYOUT DETAILS</h3>
-                <ul>
-                    <li>Location: Venue Name — Lawrence, KS</li>
-                    <li>Check-in begins 30 minutes before your session</li>
-                    <li>Parent/guardian must sign waiver for all athletes</li>
-                    <li>No prior club experience required</li>
-                    <li>Players should attend the session for their age group only</li>
-                </ul>
-
-                <h3>AGE VERIFICATION</h3>
-                <p>Not sure if your player falls in the 12U or 15U age group? Use the official HOA age calculator to determine the correct division for USAV-sanctioned play:</p>
-                <a href="https://www.usav.org/age-definition" target="_blank" rel="noopener" class="age-calc-link">
-                    🔗 HOA / USAV Age Calculator
-                </a>
-                <br>
-                <a href="https://www.kva.org" target="_blank" rel="noopener" class="age-calc-link" style="margin-top:8px;">
-                    🔗 Kansas Volleyball Association (KVA)
-                </a>
+        <div class="text-center" style="margin-bottom:36px;">
+            <div class="section-label">What We Stand For</div>
+            <h2 class="section-title light" style="font-size:clamp(1.8rem,4vw,2.8rem);">THIS IS ELEVATE</h2>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(7,1fr); gap:8px;">
+            <div style="text-align:center; padding:24px 8px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:8px;">
+                <div style="font-family:var(--font-display); font-size:clamp(2.5rem,4vw,4rem); color:var(--gold); line-height:1; margin-bottom:8px;">E</div>
+                <div style="font-family:var(--font-heading); font-weight:700; font-size:clamp(0.7rem,1.1vw,0.95rem); letter-spacing:1px; text-transform:uppercase; color:var(--white);">Energy</div>
             </div>
+            <div style="text-align:center; padding:24px 8px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:8px;">
+                <div style="font-family:var(--font-display); font-size:clamp(2.5rem,4vw,4rem); color:var(--gold); line-height:1; margin-bottom:8px;">L</div>
+                <div style="font-family:var(--font-heading); font-weight:700; font-size:clamp(0.7rem,1.1vw,0.95rem); letter-spacing:1px; text-transform:uppercase; color:var(--white);">Leadership</div>
+            </div>
+            <div style="text-align:center; padding:24px 8px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:8px;">
+                <div style="font-family:var(--font-display); font-size:clamp(2.5rem,4vw,4rem); color:var(--gold); line-height:1; margin-bottom:8px;">E</div>
+                <div style="font-family:var(--font-heading); font-weight:700; font-size:clamp(0.7rem,1.1vw,0.95rem); letter-spacing:1px; text-transform:uppercase; color:var(--white);">Effort</div>
+            </div>
+            <div style="text-align:center; padding:24px 8px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:8px;">
+                <div style="font-family:var(--font-display); font-size:clamp(2.5rem,4vw,4rem); color:var(--gold); line-height:1; margin-bottom:8px;">V</div>
+                <div style="font-family:var(--font-heading); font-weight:700; font-size:clamp(0.7rem,1.1vw,0.95rem); letter-spacing:1px; text-transform:uppercase; color:var(--white);">Vision</div>
+            </div>
+            <div style="text-align:center; padding:24px 8px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:8px;">
+                <div style="font-family:var(--font-display); font-size:clamp(2.5rem,4vw,4rem); color:var(--gold); line-height:1; margin-bottom:8px;">A</div>
+                <div style="font-family:var(--font-heading); font-weight:700; font-size:clamp(0.7rem,1.1vw,0.95rem); letter-spacing:1px; text-transform:uppercase; color:var(--white);">Agility</div>
+            </div>
+            <div style="text-align:center; padding:24px 8px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:8px;">
+                <div style="font-family:var(--font-display); font-size:clamp(2.5rem,4vw,4rem); color:var(--gold); line-height:1; margin-bottom:8px;">T</div>
+                <div style="font-family:var(--font-heading); font-weight:700; font-size:clamp(0.7rem,1.1vw,0.95rem); letter-spacing:1px; text-transform:uppercase; color:var(--white);">Teamwork</div>
+            </div>
+            <div style="text-align:center; padding:24px 8px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:8px;">
+                <div style="font-family:var(--font-display); font-size:clamp(2.5rem,4vw,4rem); color:var(--gold); line-height:1; margin-bottom:8px;">E</div>
+                <div style="font-family:var(--font-heading); font-weight:700; font-size:clamp(0.7rem,1.1vw,0.95rem); letter-spacing:1px; text-transform:uppercase; color:var(--white);">Excellence</div>
+            </div>
+        </div>
+        <div class="text-center" style="margin-top:36px;">
+            <p style="color:var(--gray-300); margin-bottom:20px;">These seven values drive everything we do — from how we run practice to how we celebrate our athletes.</p>
+            <a href="/coaches/" class="btn btn-gold">Meet Our Coaches & Philosophy</a>
+        </div>
+    </div>
+</section>
 
-            <div>
-                <div class="form-embed">
-                    <div class="form-embed-header">📝 Tryout Registration Form</div>
-                    <!--
-                    <iframe
-                        src="https://docs.google.com/forms/d/e/YOUR_TRYOUT_FORM_ID/viewform?embedded=true"
-                        title="Tryout Registration Form"
-                        loading="lazy">
-                    </iframe>
-                    -->
-                    <div class="form-placeholder">
-                        <div class="icon">📝</div>
-                        <p>Google Form will appear here once you add your Form ID</p>
-                        <code>YOUR_TRYOUT_FORM_ID</code>
-                    </div>
+<!-- OPEN GYM -->
+<section class="section-pad" id="open-gym" style="background:var(--gray-100);">
+    <div class="container">
+        <div class="text-center">
+            <div class="section-label">Drop-In Sessions</div>
+            <h2 class="section-title">OPEN GYM</h2>
+            <p class="section-subtitle">Structured open gym sessions in Lawrence for all levels. Show up, warm up, and play.</p>
+        </div>
+        <div class="gym-grid">
+            <div class="gym-card">
+                <div class="gym-header juniors">
+                    <div class="gym-tag">Ages 10–17</div>
+                    <h3>JUNIORS OPEN GYM</h3>
+                    <p>Skill-focused sessions with drills, games, and coached play. A safe space to develop skills, make friends, and fall in love with volleyball.</p>
                 </div>
-
-                <!--
-                <div style="margin-top:16px;">
-                    <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+                <div class="gym-details">
+                    <div class="gym-detail"><div class="icon">📅</div><div><strong>Saturdays</strong> — 9:00 AM to 11:00 AM</div></div>
+                    <div class="gym-detail"><div class="icon">📍</div><div><strong>The Good Game</strong> — Lawrence, KS</div></div>
+                    <div class="gym-detail"><div class="icon">💲</div><div><strong>$10 drop-in</strong> / $35 monthly pass</div></div>
+                    <div class="gym-detail"><div class="icon">📋</div><div>Waiver required — <a href="#contact" style="color:var(--gold);text-decoration:underline;">contact us</a></div></div>
                 </div>
-                -->
+            </div>
+            <div class="gym-card">
+                <div class="gym-header adults">
+                    <div class="gym-tag">Ages 18+</div>
+                    <h3>ADULTS OPEN GYM</h3>
+                    <p>Competitive and recreational play for adults of all skill levels. Rotating teams, rally scoring, and a positive atmosphere every night.</p>
+                </div>
+                <div class="gym-details">
+                    <div class="gym-detail"><div class="icon">📅</div><div><strong>Wednesdays</strong> — 7:00 PM to 9:30 PM</div></div>
+                    <div class="gym-detail"><div class="icon">📍</div><div><strong>The Good Game</strong> — Lawrence, KS</div></div>
+                    <div class="gym-detail"><div class="icon">💲</div><div><strong>$12 drop-in</strong> / $40 monthly pass</div></div>
+                    <div class="gym-detail"><div class="icon">📋</div><div>All levels welcome — no experience needed</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center" style="margin-top:32px;">
+            <a href="/schedule/" class="btn btn-navy">View Full Schedule & Subscribe</a>
+        </div>
+    </div>
+</section>
 
-                <div style="margin-top:32px; padding:28px; background:var(--cream); border-radius:12px;">
-                    <h3 style="font-family:var(--font-display); font-size:1.4rem; color:var(--navy); margin-bottom:16px;">TRYOUT FAQ</h3>
-                    <div style="margin-bottom:16px;">
-                        <h4 style="font-family:var(--font-heading); font-weight:700; color:var(--navy); margin-bottom:4px;">What if my child has never played club?</h4>
-                        <p style="font-size:0.92rem; color:var(--gray-500);">No problem at all. We evaluate potential and attitude, not just existing skill. We're building these teams from the ground up and want athletes who are eager to grow.</p>
-                    </div>
-                    <div style="margin-bottom:16px;">
-                        <h4 style="font-family:var(--font-heading); font-weight:700; color:var(--navy); margin-bottom:4px;">Will every athlete make a team?</h4>
-                        <p style="font-size:0.92rem; color:var(--gray-500);">We're filling a 12U and 15U roster, so spots are limited. Athletes who aren't placed will receive honest feedback and are welcome at our open gym sessions.</p>
-                    </div>
-                    <div style="margin-bottom:16px;">
-                        <h4 style="font-family:var(--font-heading); font-weight:700; color:var(--navy); margin-bottom:4px;">There's only one tryout date — what if we can't make it?</h4>
-                        <p style="font-size:0.92rem; color:var(--gray-500);"><a href="/#contact" style="color:var(--gold);text-decoration:underline;">Contact us</a> as soon as possible. We may be able to arrange an individual evaluation depending on timing and roster availability.</p>
-                    </div>
-                    <div style="margin-bottom:16px;">
-                        <h4 style="font-family:var(--font-heading); font-weight:700; color:var(--navy); margin-bottom:4px;">Do we need to stay for both sessions?</h4>
-                        <p style="font-size:0.92rem; color:var(--gray-500);">No — players only attend the session for their age group. 12U athletes come for Session 1, 15U athletes come for Session 2. Arrive 30 minutes early for your session's check-in.</p>
-                    </div>
-                    <div>
-                        <h4 style="font-family:var(--font-heading); font-weight:700; color:var(--navy); margin-bottom:4px;">What does the season commitment look like?</h4>
-                        <p style="font-size:0.92rem; color:var(--gray-500);">Typically 2 practices per week plus weekend tournaments. We publish the full schedule on our <a href="/schedule/" style="color:var(--gold);text-decoration:underline;">Schedule page</a> and it's subscribable via Google Calendar.</p>
-                    </div>
+<!-- PLAYER SURVEY -->
+<section class="section-pad" id="survey" style="background:var(--cream);">
+    <div class="container">
+        <div class="text-center mb-48">
+            <div class="section-label">Your Voice Matters</div>
+            <h2 class="section-title">PLAYER SURVEY</h2>
+        </div>
+        <div class="survey-content">
+            <div class="survey-info">
+                <p>We want to hear from our players and families. Your feedback directly shapes our coaching, scheduling, and program direction. Anonymous and takes about 3 minutes.</p>
+                <div class="survey-benefits">
+                    <div class="benefit"><div class="benefit-check">✓</div><p><strong>Rate your experience</strong> — coaching quality, facility, communication</p></div>
+                    <div class="benefit"><div class="benefit-check">✓</div><p><strong>Share suggestions</strong> — schedule changes, new programs, equipment needs</p></div>
+                    <div class="benefit"><div class="benefit-check">✓</div><p><strong>Help us improve</strong> — your feedback drives real changes every season</p></div>
+                    <div class="benefit"><div class="benefit-check">✓</div><p><strong>100% anonymous</strong> — be as honest as you want</p></div>
+                </div>
+            </div>
+            <div class="form-embed">
+                <div class="form-embed-header">📊 Player & Family Survey</div>
+                <!-- REPLACE with: <iframe src="https://docs.google.com/forms/d/e/YOUR_SURVEY_FORM_ID/viewform?embedded=true" title="Player Survey" loading="lazy"></iframe> -->
+                <div class="form-placeholder">
+                    <div class="icon">📊</div>
+                    <p>Google Form will appear here once you add your Form ID</p>
+                    <code>YOUR_SURVEY_FORM_ID</code>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section-pad" id="contact" style="background:var(--gray-100);">
+    <div class="container">
+        <div class="text-center mb-48">
+            <div class="section-label">Get In Touch</div>
+            <h2 class="section-title">CONTACT US</h2>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div><h4>Email</h4><p>acomputerwiz+elevate@gmail.com</p></div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div><h4>Phone / Text</h4><p>‪(816) 673-3105‬</p></div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div><h4>Location</h4><p>Lawrence, Kansas 66044<br>Practice at: The Good Game</p></div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🔗</div>
+                    <div><h4>Links</h4><p><a href="https://github.com/acomputerwiz" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">GitHub</a></p></div>
+                </div>
+            </div>
+            <div class="form-embed">
+                <div class="form-embed-header">✉️ Send Us a Message</div>
+                <!-- REPLACE with: <iframe src="https://docs.google.com/forms/d/e/YOUR_CONTACT_FORM_ID/viewform?embedded=true" title="Contact Form" loading="lazy"></iframe> -->
+                <div class="form-placeholder">
+                    <div class="icon">✉️</div>
+                    <p>Google Form will appear here once you add your Form ID</p>
+                    <code>YOUR_CONTACT_FORM_ID</code>
                 </div>
             </div>
         </div>
@@ -213,20 +349,19 @@
                 </div>
             </div>
             <div>
-                <h4>Home Page</h4>
+                <h4>On This Page</h4>
                 <div class="footer-links">
-                    <a href="/#mission">Mission</a>
-                    <a href="/#open-gym">Open Gym</a>
-                    <a href="/#survey">Player Survey</a>
-                    <a href="/#contact">Contact</a>
+                    <a href="#mission">Mission</a>
+                    <a href="#open-gym">Open Gym</a>
+                    <a href="#survey">Player Survey</a>
+                    <a href="#contact">Contact</a>
                 </div>
             </div>
             <div>
                 <h4>Resources</h4>
                 <div class="footer-links">
                     <a href="https://www.usav.org/age-definition" target="_blank" rel="noopener">HOA Age Calculator ↗</a>
-                    <a href="https://www.kva.org" target="_blank" rel="noopener">Kansas Volleyball Assoc ↗</a>
-                    <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" rel="noopener">GitHub ↗</a>
+                    <a href="https://github.com/acomputerwiz" target="_blank" rel="noopener">GitHub ↗</a>
                 </div>
             </div>
         </div>
