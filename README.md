@@ -1,31 +1,31 @@
-# Elevate Volleyball — LawrenceVolleyball.com
+# Elevate Volleyball — elevatelawrencevb.com
 
-Multi-page volleyball coaching website for Lawrence, KS. Plain HTML + CSS, GitHub Pages hosted, with clean URLs at `LawrenceVolleyball.com`.
+Multi-page volleyball coaching website for Lawrence, KS. Plain HTML + CSS, GitHub Pages hosted, with clean URLs at `elevatelawrencevb.com`.
 
 ## Clean URL Structure
 ```
-LawrenceVolleyball.com/             → Home (mission, ELEVATE acronym, open gym, survey, contact)
-LawrenceVolleyball.com/coaches/     → Coach profiles, philosophy, what parents can expect
-LawrenceVolleyball.com/tryouts/     → Tryout registration + FAQ + HOA age calculator
-LawrenceVolleyball.com/schedule/    → Google Calendar embed + subscribe instructions
-LawrenceVolleyball.com/sponsors/    → Tiered sponsor logos + become-a-sponsor CTA
+elevatelawrencevb.com/             → Home (mission, ELEVATE acronym, open gym, survey, contact)
+elevatelawrencevb.com/coaches/     → Coach profiles, philosophy, what parents can expect
+elevatelawrencevb.com/tryouts/     → Tryout registration + FAQ + HOA age calculator
+elevatelawrencevb.com/schedule/    → Google Calendar embed + subscribe instructions
+elevatelawrencevb.com/sponsors/    → Tiered sponsor logos + become-a-sponsor CTA
 ```
 
 ## File Structure
 ```
 elevate-volleyball/
-├── CNAME                       # Tells GitHub Pages to use LawrenceVolleyball.com
+├── CNAME                       # Tells GitHub Pages to use elevatelawrencevb.com
 ├── index.html                  # Home page
 ├── styles.css                  # Shared stylesheet
 ├── og-image.jpg                # Social preview image 1200x630px (add this)
 ├── coaches/
-│   └── index.html              # → LawrenceVolleyball.com/coaches/
+│   └── index.html              # → elevatelawrencevb.com/coaches/
 ├── tryouts/
-│   └── index.html              # → LawrenceVolleyball.com/tryouts/
+│   └── index.html              # → elevatelawrencevb.com/tryouts/
 ├── schedule/
-│   └── index.html              # → LawrenceVolleyball.com/schedule/
+│   └── index.html              # → elevatelawrencevb.com/schedule/
 ├── sponsors/
-│   └── index.html              # → LawrenceVolleyball.com/sponsors/
+│   └── index.html              # → elevatelawrencevb.com/sponsors/
 └── images/                     # Coach photos, sponsor logos (create this)
 ```
 
@@ -37,7 +37,7 @@ git clone https://github.com/YOUR-USERNAME/elevate-volleyball.git
 cd elevate-volleyball
 # copy all files/folders into the repo maintaining the structure above
 git add .
-git commit -m "Launch Elevate VB — LawrenceVolleyball.com"
+git commit -m "Launch Elevate VB — elevatelawrencevb.com"
 git push origin main
 ```
 
@@ -46,7 +46,7 @@ git push origin main
 2. Source: **Deploy from a branch** → **main** / **/ (root)**
 3. Click **Save**
 
-### 3. Connect LawrenceVolleyball.com
+### 3. Connect elevatelawrencevb.com
 
 **At your domain registrar (Namecheap, Cloudflare, GoDaddy, etc.):**
 
@@ -64,7 +64,7 @@ These are GitHub Pages' official IP addresses documented at:
 https://docs.github.com/en/pages/configuring-a-custom-domain-for-github-pages/managing-a-custom-domain-for-your-github-pages-site
 
 **Back in GitHub:**
-1. Settings → Pages → **Custom domain** → type `LawrenceVolleyball.com` → Save
+1. Settings → Pages → **Custom domain** → type `elevatelawrencevb.com` → Save
 2. Check **Enforce HTTPS** (may take a few minutes to become available)
 3. The `CNAME` file in the repo ensures the setting persists across deploys
 
@@ -112,13 +112,13 @@ https://calendar.google.com/calendar/ical/YOUR_CALENDAR_ID/public/basic.ics
 ### reCAPTCHA (Optional)
 Google Forms already handle spam. If you want extra protection on the tryouts page:
 1. Register at https://www.google.com/recaptcha/admin → v2 checkbox
-2. Add `LawrenceVolleyball.com` to allowed domains
+2. Add `elevatelawrencevb.com` to allowed domains
 3. Uncomment the script + div in `tryouts/index.html`
 4. Replace `YOUR_RECAPTCHA_SITE_KEY`
 
 ## SEO & Geo (Built In)
 
-Every page includes: targeted meta titles/descriptions with Lawrence KS keywords, Open Graph + Twitter cards, JSON-LD structured data (`SportsOrganization` on home, `SportsEvent` on tryouts), geo meta tags for Lawrence KS (38.9717, -95.2353), canonical URLs at LawrenceVolleyball.com, semantic HTML5, and mobile responsive design.
+Every page includes: targeted meta titles/descriptions with Lawrence KS keywords, Open Graph + Twitter cards, JSON-LD structured data (`SportsOrganization` on home, `SportsEvent` on tryouts), geo meta tags for Lawrence KS (38.9717, -95.2353), canonical URLs at elevatelawrencevb.com, semantic HTML5, and mobile responsive design.
 
 **ELEVATE Acronym** (featured on home + coaches pages):
 **E**nergy · **L**eadership · **E**ffort · **V**ision · **A**gility · **T**eamwork · **E**xcellence
@@ -126,7 +126,7 @@ Every page includes: targeted meta titles/descriptions with Lawrence KS keywords
 **Separate pages = separate rankings.** The tryouts page targets "volleyball tryouts Lawrence KS" while the schedule page targets "volleyball schedule Lawrence Kansas" — each ranks independently.
 
 ### Maximize Local SEO
-1. Create a **Google Business Profile** → link to LawrenceVolleyball.com
+1. Create a **Google Business Profile** → link to elevatelawrencevb.com
 2. Register with **Google Search Console** → submit sitemap
 3. Get listed on **Lawrence Chamber of Commerce**, **KVA**, local directories
 4. Add real photos with descriptive alt text
