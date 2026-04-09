@@ -347,7 +347,6 @@ ul { list-style: none; }
     box-shadow: 0 12px 32px rgba(0,0,0,0.1);
 }
 .coach-img {
-    height: 260px;
     background: linear-gradient(135deg, var(--navy), var(--navy-light));
     display: flex; align-items: center; justify-content: center;
     position: relative; overflow: hidden;
@@ -358,6 +357,7 @@ ul { list-style: none; }
     height: 60px;
     background: linear-gradient(to top, var(--white), transparent);
 }
+.coach-img img { width: 100%; display: block; }
 .coach-img .placeholder-icon { font-size: 4rem; opacity: 0.3; }
 .coach-body { padding: 24px; }
 .coach-body h3 {
