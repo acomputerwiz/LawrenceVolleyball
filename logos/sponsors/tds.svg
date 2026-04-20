@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <defs>
+    <linearGradient id="tdsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a4d8c"/>
+      <stop offset="100%" stop-color="#1a7dc4"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="200" fill="#ffffff"/>
+  <rect x="30" y="55" width="90" height="90" rx="8" fill="url(#tdsGrad)"/>
+  <text x="75" y="118" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="42" fill="#ffffff" text-anchor="middle" letter-spacing="-1">TDS</text>
+  <text x="145" y="108" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="48" fill="#0a4d8c" letter-spacing="2">TDS</text>
+  <text x="147" y="138" font-family="Arial, Helvetica, sans-serif" font-weight="500" font-size="13" fill="#5a6b7a" letter-spacing="3">SOLUTIONS</text>
+  <line x1="145" y1="118" x2="365" y2="118" stroke="#0a4d8c" stroke-width="1.5" opacity="0.3"/>
+</svg>
