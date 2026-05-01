@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#0f1a2e">
+    <link rel="icon" href="/logos/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="/logos/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Passing & Serving Clinic Flyer — May 11 | Elevate Lawrence Volleyball</title>
+    <meta name="description" content="Printable flyer — Passing & Serving Clinic, May 11, 6:00–7:30pm at Holcom Park Rec Center, Lawrence KS. $15. For current 7th–8th graders.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://elevatelawrencevb.com/clinics/passing-serving/flyer.html">
+
+    <meta property="og:title" content="Passing & Serving Clinic — May 11, Lawrence KS">
+    <meta property="og:description" content="May 11, 6:00–7:30pm at Holcom Park. Current 7th–8th graders. $15 per player.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://elevatelawrencevb.com/clinics/passing-serving/flyer.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700;800&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --navy:       #0f1a2e;
+            --navy-mid:   #151f3a;
+            --gold:       #a855f7;
+            --gold-light: #c084fc;
+            --pink:       #ec4899;
+            --pink-light: #f472b6;
+            --cream:      #f3f0f8;
+            --white:      #ffffff;
+            --gray-100:   #f1f0f5;
+            --gray-300:   #d1d5db;
+            --gray-500:   #6b7280;
+            --gray-700:   #374151;
+            --font-display: 'Bebas Neue', 'Impact', sans-serif;
+            --font-heading: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+            --font-body:    'Barlow', 'Helvetica Neue', sans-serif;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { font-family: var(--font-body); color: var(--gray-700); background: #2a2540; -webkit-font-smoothing: antialiased; }
+        body { padding: 24px 12px; min-height: 100vh; }
+        a { color: inherit; text-decoration: none; }
+
+        /* On-screen helper bar (hidden in print) */
+        .helper-bar {
+            max-width: 8.5in;
+            margin: 0 auto 16px;
+            padding: 14px 20px;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 8px;
+            color: var(--white);
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .helper-bar a {
+            background: var(--pink);
+            color: var(--white);
+            padding: 6px 14px;
+            border-radius: 4px;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.78rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+        .helper-bar a:hover { background: var(--pink-light); }
+
+        /* The flyer itself — sized for US Letter */
+        .flyer {
+            width: 8.5in;
+            min-height: 11in;
+            margin: 0 auto;
+            background: var(--white);
+            color: var(--gray-700);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* HERO BANNER */
+        .flyer-hero {
+            background: linear-gradient(135deg, var(--navy) 0%, #1a1040 50%, #2d1854 100%);
+            color: var(--white);
+            padding: 36px 48px 28px;
+            position: relative;
+            overflow: hidden;
+        }
+        .flyer-hero::before {
+            content: '';
+            position: absolute;
+            top: -40%; right: -15%;
+            width: 600px; height: 600px;
+            background: radial-gradient(circle, rgba(168,85,247,0.18) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .flyer-hero::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: radial-gradient(circle, rgba(168,85,247,0.08) 1px, transparent 1px);
+            background-size: 30px 30px;
+            pointer-events: none;
+        }
+        .flyer-brand {
+            position: relative; z-index: 2;
+            font-family: var(--font-display);
+            font-size: 1.05rem;
+            letter-spacing: 3px;
+            color: var(--white);
+            border-bottom: 2px solid var(--pink);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .flyer-brand span { color: var(--gold); }
+        .flyer-brand .badge {
+            font-family: var(--font-heading);
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            color: var(--pink-light);
+            font-weight: 700;
+        }
+
+        .flyer-eyebrow {
+            position: relative; z-index: 2;
+            display: inline-block;
+            padding: 6px 16px;
+            background: rgba(236,72,153,0.18);
+            border: 1px solid rgba(236,72,153,0.4);
+            border-radius: 20px;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.78rem;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: var(--pink-light);
+            margin-bottom: 16px;
+        }
+
+        .flyer-title {
+            position: relative; z-index: 2;
+            font-family: var(--font-display);
+            font-size: 4.2rem;
+            line-height: 0.95;
+            color: var(--white);
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+        .flyer-title .amp { color: var(--gold); }
+
+        .flyer-when {
+            position: relative; z-index: 2;
+            display: flex;
+            align-items: baseline;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .flyer-when .date {
+            font-family: var(--font-display);
+            font-size: 2.4rem;
+            color: var(--gold);
+            line-height: 1;
+        }
+        .flyer-when .time {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1.4rem;
+            color: var(--white);
+            letter-spacing: 1.5px;
+        }
+        .flyer-when .checkin {
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            color: var(--gray-300);
+            margin-top: 4px;
+            width: 100%;
+        }
+
+        /* INFO BLOCK */
+        .flyer-info {
+            padding: 24px 48px 16px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px 28px;
+            border-bottom: 2px dashed var(--gray-300);
+        }
+        .info-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .info-icon {
+            flex-shrink: 0;
+            width: 38px; height: 38px;
+            display: flex; align-items: center; justify-content: center;
+            background: var(--navy);
+            color: var(--gold);
+            border-radius: 6px;
+            font-size: 1.05rem;
+        }
+        .info-label {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            color: var(--pink);
+            text-transform: uppercase;
+            margin-bottom: 1px;
+        }
+        .info-value {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: var(--navy);
+            line-height: 1.25;
+        }
+        .info-sub {
+            font-size: 0.82rem;
+            color: var(--gray-500);
+            margin-top: 1px;
+        }
+        .info-value a { color: var(--navy); border-bottom: 1px dotted var(--gray-500); }
+
+        /* WHAT YOU'LL LEARN */
+        .flyer-learn {
+            padding: 20px 48px 16px;
+        }
+        .flyer-learn h2 {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            color: var(--navy);
+            letter-spacing: 1.5px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .flyer-learn h2::before {
+            content: '';
+            width: 28px; height: 3px;
+            background: var(--pink);
+        }
+        .flyer-learn ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px 24px;
+        }
+        .flyer-learn li {
+            position: relative;
+            padding-left: 20px;
+            font-size: 0.92rem;
+            color: var(--gray-700);
+            line-height: 1.4;
+        }
+        .flyer-learn li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: bold;
+        }
+        .flyer-learn li strong { color: var(--navy); }
+
+        /* QR SECTION */
+        .flyer-qr {
+            margin: 8px 48px 0;
+            padding: 22px 24px;
+            background: var(--cream);
+            border-radius: 10px;
+            border: 2px solid var(--navy);
+        }
+        .flyer-qr-title {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            color: var(--navy);
+            text-align: center;
+            margin-bottom: 16px;
+            letter-spacing: 1.5px;
+        }
+        .qr-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 16px;
+        }
+        .qr-card {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 14px 10px 12px;
+            text-align: center;
+            border: 1px solid var(--gray-300);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .qr-step {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.65rem;
+            letter-spacing: 2px;
+            color: var(--pink);
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+        .qr-label {
+            font-family: var(--font-display);
+            font-size: 1.15rem;
+            color: var(--navy);
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+            line-height: 1;
+        }
+        .qr-img {
+            width: 130px; height: 130px;
+            display: block;
+            margin: 0 auto 8px;
+            border: 2px solid var(--navy);
+            border-radius: 4px;
+        }
+        .qr-url {
+            font-family: var(--font-heading);
+            font-size: 0.7rem;
+            color: var(--gray-500);
+            word-break: break-all;
+            line-height: 1.2;
+            font-weight: 600;
+        }
+        .qr-url a { color: var(--gray-700); }
+
+        /* FOOTER */
+        .flyer-foot {
+            margin-top: auto;
+            padding: 18px 48px 22px;
+            background: var(--navy);
+            color: var(--gray-300);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            border-top: 4px solid var(--pink);
+        }
+        .flyer-foot .tagline {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 1.5px;
+            color: var(--white);
+            text-transform: uppercase;
+        }
+        .flyer-foot .tagline .gold { color: var(--gold); }
+        .flyer-foot .contact {
+            font-size: 0.85rem;
+            text-align: right;
+            line-height: 1.5;
+        }
+        .flyer-foot .contact a {
+            color: var(--gold-light);
+            font-weight: 600;
+        }
+        .flyer-foot .contact a:hover { color: var(--white); }
+
+        /* RESPONSIVE — viewing on phone */
+        @media (max-width: 850px) {
+            body { padding: 12px 8px; }
+            .helper-bar { font-size: 0.78rem; padding: 10px 14px; }
+            .flyer {
+                width: 100%;
+                min-height: auto;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            }
+            .flyer-hero { padding: 24px 24px 20px; }
+            .flyer-title { font-size: 2.6rem; }
+            .flyer-when .date { font-size: 1.8rem; }
+            .flyer-when .time { font-size: 1.1rem; }
+            .flyer-info { padding: 20px 24px 14px; grid-template-columns: 1fr; gap: 14px; }
+            .flyer-learn { padding: 16px 24px 12px; }
+            .flyer-learn ul { grid-template-columns: 1fr; }
+            .flyer-qr { margin: 8px 24px 0; padding: 18px 16px; }
+            .qr-grid { grid-template-columns: 1fr; gap: 14px; }
+            .qr-img { width: 160px; height: 160px; }
+            .flyer-foot { padding: 16px 24px 20px; flex-direction: column; align-items: flex-start; }
+            .flyer-foot .contact { text-align: left; }
+        }
+
+        /* PRINT */
+        @media print {
+            @page { size: letter; margin: 0; }
+            body { background: var(--white); padding: 0; }
+            .helper-bar { display: none; }
+            .flyer {
+                width: 8.5in;
+                min-height: 11in;
+                box-shadow: none;
+                margin: 0;
+            }
+            a { color: inherit; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- on-screen toolbar (hidden in print) -->
+<div class="helper-bar">
+    <span>📄 Printable flyer — Letter size. Print, screenshot, or share this link.</span>
+    <span>
+        <a href="javascript:window.print()">🖨 Print</a>
+        &nbsp;
+        <a href="/clinics/passing-serving/" style="background:var(--gold);">View Sign-Up Page</a>
+    </span>
+</div>
+
+<article class="flyer">
+
+    <!-- HERO -->
+    <header class="flyer-hero">
+        <div class="flyer-brand">
+            <img src="/logos/elevatelawrencelogo.png" alt="Elevate Lawrence Volleyball" style="height:48px; width:auto; display:block;">
+            <div class="badge">elevatelawrencevb.com</div>
+        </div>
+        <div class="flyer-eyebrow">🏐 One-Night Skills Clinic</div>
+        <h1 class="flyer-title">PASSING <span class="amp">&amp;</span> SERVING<br>CLINIC</h1>
+        <div class="flyer-when">
+            <div class="date">MON · MAY 11</div>
+            <div class="time">6:00 — 7:30 PM</div>
+            <div class="checkin">⏱ Check-in begins at 5:50 PM</div>
+        </div>
+    </header>
+
+    <!-- INFO -->
+    <section class="flyer-info">
+        <div class="info-row">
+            <div class="info-icon">📍</div>
+            <div>
+                <div class="info-label">Location</div>
+                <div class="info-value">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Holcom+Park+Recreation+Center+2700+W+27th+St+Lawrence+KS+66047" target="_blank" rel="noopener">Holcom Park Rec Center</a>
+                </div>
+                <div class="info-sub">2700 W 27th St, Lawrence, KS 66047</div>
+            </div>
+        </div>
+        <div class="info-row">
+            <div class="info-icon">👥</div>
+            <div>
+                <div class="info-label">Who</div>
+                <div class="info-value">Current 7th &amp; 8th Graders</div>
+                <div class="info-sub">going into 8th / 9th grade in fall</div>
+            </div>
+        </div>
+        <div class="info-row">
+            <div class="info-icon">💲</div>
+            <div>
+                <div class="info-label">Cost</div>
+                <div class="info-value">$15 per player</div>
+                <div class="info-sub">Venmo or cash at check-in</div>
+            </div>
+        </div>
+        <div class="info-row">
+            <div class="info-icon">📋</div>
+            <div>
+                <div class="info-label">Bring</div>
+                <div class="info-value">Court shoes · Knee pads</div>
+                <div class="info-sub">Water bottle · Signed waiver</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEARN -->
+    <section class="flyer-learn">
+        <h2>WHAT WE'LL WORK ON</h2>
+        <ul>
+            <li><strong>Passing platform</strong> — angle to target, not arm swing</li>
+            <li><strong>Serving routine</strong> — toss, contact, target zones</li>
+            <li><strong>Movement &amp; reads</strong> — beat the ball to the spot</li>
+            <li><strong>Live reps</strong> — graded serve / serve-receive</li>
+        </ul>
+    </section>
+
+    <!-- QR CODES -->
+    <section class="flyer-qr">
+        <div class="flyer-qr-title">SCAN · TAP · SHARE</div>
+        <div class="qr-grid">
+
+            <div class="qr-card">
+                <div class="qr-step">Step 1</div>
+                <div class="qr-label">LEARN MORE</div>
+                <a href="https://elevatelawrencevb.com/clinics/passing-serving/" target="_blank" rel="noopener">
+                    <img class="qr-img"
+                         src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&margin=10&data=https%3A%2F%2Felevatelawrencevb.com%2Fclinics%2Fpassing-serving%2F"
+                         alt="QR code linking to clinic landing page">
+                </a>
+                <div class="qr-url"><a href="https://elevatelawrencevb.com/clinics/passing-serving/" target="_blank" rel="noopener">elevatelawrencevb.com/clinics/passing-serving</a></div>
+            </div>
+
+            <div class="qr-card">
+                <div class="qr-step">Step 2</div>
+                <div class="qr-label">REGISTER</div>
+                <a href="https://forms.gle/kouktDKwsvea3W118" target="_blank" rel="noopener">
+                    <img class="qr-img"
+                         src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&margin=10&data=https%3A%2F%2Fforms.gle%2FkouktDKwsvea3W118"
+                         alt="QR code linking to registration form">
+                </a>
+                <div class="qr-url"><a href="https://forms.gle/kouktDKwsvea3W118" target="_blank" rel="noopener">forms.gle/kouktDKwsvea3W118</a></div>
+            </div>
+
+            <div class="qr-card">
+                <div class="qr-step">Step 3</div>
+                <div class="qr-label">PAY $15</div>
+                <a href="https://account.venmo.com/u/elevatelawrencevb" target="_blank" rel="noopener">
+                    <img class="qr-img"
+                         src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&margin=10&data=https%3A%2F%2Faccount.venmo.com%2Fu%2Felevatelawrencevb"
+                         alt="QR code linking to Venmo payment">
+                </a>
+                <div class="qr-url"><a href="https://account.venmo.com/u/elevatelawrencevb" target="_blank" rel="noopener">@elevatelawrencevb (Venmo)</a><br><span style="color:var(--navy); font-weight:700;">— or cash at check-in —</span></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOT -->
+    <footer class="flyer-foot">
+        <div class="tagline">
+            <span class="gold">ELEVATE</span> YOUR GAME &amp; CHARACTER
+        </div>
+        <div class="contact">
+            <a href="mailto:elevatelawrencevb@gmail.com?subject=Passing%20%26%20Serving%20Clinic%20-%20May%2011">elevatelawrencevb@gmail.com</a><br>
+            <a href="tel:+17852513817">(785) 251-3817</a> &nbsp;·&nbsp; Lawrence, KS
+        </div>
+    </footer>
+
+</article>
+
+</body>
+</html>
