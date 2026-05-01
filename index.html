@@ -135,7 +135,7 @@
     </svg>
     <div class="container">
         <div class="hero-content">
-            <img src="/logos/volleyball.png" alt="Elevate Lawrence Volleyball" class="hero-logo">
+            <img src="/logos/elevatelawrencelogosmall.png" alt="Elevate Lawrence Volleyball" class="hero-logo">
             <div class="hero-badge">🏐 Lawrence, Kansas — Volleyball Club</div>
             <div class="hero-badge" style="margin-top:8px; background:var(--pink-dim); border-color:rgba(236,72,153,0.3);">2026–2027 Season</div>
             <h1>
@@ -152,6 +152,12 @@
 </header>
 
 <!-- CLINICS -->
+<style>
+    @media (max-width: 700px) {
+        #clinics .clinic-card-grid { grid-template-columns: 1fr !important; gap: 16px !important; text-align: center; }
+        #clinics .clinic-card-arrow { justify-self: center; }
+    }
+</style>
 <section class="section-pad" id="clinics" style="background:var(--white); border-top:4px solid var(--pink);">
     <div class="container">
         <div class="text-center mb-48">
@@ -162,7 +168,7 @@
 
         <a href="/clinics/passing-serving/" style="display:block; max-width:820px; margin:0 auto; padding:36px 32px; background:linear-gradient(135deg, var(--navy) 0%, #1a1040 50%, #2d1854 100%); border-radius:16px; color:var(--white); border:3px solid var(--pink); position:relative; overflow:hidden; box-shadow:0 8px 32px rgba(0,0,0,0.15); transition:transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 40px rgba(168,85,247,0.3)';" onmouseout="this.style.transform='';this.style.boxShadow='0 8px 32px rgba(0,0,0,0.15)';">
 
-            <div style="display:grid; grid-template-columns:auto 1fr auto; gap:28px; align-items:center;">
+            <div class="clinic-card-grid" style="display:grid; grid-template-columns:auto 1fr auto; gap:28px; align-items:center;">
 
                 <div style="text-align:center; padding:14px 18px; background:var(--pink); border-radius:10px; min-width:96px;">
                     <div style="font-family:var(--font-heading); font-weight:700; font-size:0.7rem; letter-spacing:2px; color:var(--white); text-transform:uppercase; opacity:0.9;">Mon</div>
@@ -180,7 +186,7 @@
                     </div>
                 </div>
 
-                <div style="font-family:var(--font-heading); font-weight:700; font-size:0.85rem; letter-spacing:1.5px; color:var(--gold); text-transform:uppercase; white-space:nowrap;">
+                <div class="clinic-card-arrow" style="font-family:var(--font-heading); font-weight:700; font-size:0.85rem; letter-spacing:1.5px; color:var(--gold); text-transform:uppercase; white-space:nowrap;">
                     Sign Up &nbsp;→
                 </div>
 
@@ -388,6 +394,7 @@
                 <h4>On This Page</h4>
                 <div class="footer-links">
                     <a href="#mission">Mission</a>
+                    <a href="#clinics">Clinics</a>
                     <a href="#open-gym">Open Gym</a>
                     <a href="#contact">Contact</a>
                 </div>
