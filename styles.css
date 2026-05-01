@@ -274,14 +274,6 @@ ul { list-style: none; }
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-.hero-volleyball {
-    position: absolute;
-    right: 5%; top: 50%;
-    transform: translateY(-50%);
-    width: 420px; height: 420px;
-    opacity: 0.08; z-index: 1;
-}
-
 /* ===========================
    MISSION
    =========================== */
@@ -793,7 +785,6 @@ ul { list-style: none; }
     .nav-links.open a { font-size: 1rem; padding: 4px 0; }
     .hamburger { display: flex; }
     .hamburger span { width: 28px; height: 3px; }
-    .hero-volleyball { display: none; }
     .mission-grid,
     .gym-grid,
     .tryout-content,
