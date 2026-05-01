@@ -408,6 +408,19 @@
                 margin: 0;
             }
             a { color: inherit; }
+
+            /* Force 3-up QR grid in print — browsers evaluate (max-width:850px)
+               against the ~816px Letter page width, which would otherwise collapse
+               the grid to a single column. */
+            .flyer-hero { padding: 32px 48px 24px !important; }
+            .flyer-info { padding: 22px 48px 14px !important; grid-template-columns: 1fr 1fr !important; gap: 14px 28px !important; }
+            .flyer-learn { padding: 18px 48px 12px !important; }
+            .flyer-learn ul { grid-template-columns: 1fr 1fr !important; }
+            .flyer-qr { margin: 6px 48px 0 !important; padding: 18px 22px !important; }
+            .qr-grid { grid-template-columns: 1fr 1fr 1fr !important; gap: 14px !important; }
+            .qr-img { width: 120px !important; height: 120px !important; }
+            .flyer-foot { padding: 16px 48px 20px !important; flex-direction: row !important; align-items: center !important; }
+            .flyer-foot .contact { text-align: right !important; }
         }
     </style>
 </head>
@@ -482,10 +495,10 @@
     <section class="flyer-learn">
         <h2>WHAT WE'LL WORK ON</h2>
         <ul>
-            <li><strong>Passing platform</strong> — angle to target, not arm swing</li>
-            <li><strong>Serving routine</strong> — toss, contact, target zones</li>
-            <li><strong>Movement &amp; reads</strong> — beat the ball to the spot</li>
-            <li><strong>Live reps</strong> — graded serve / serve-receive</li>
+            <li><strong>Passing platform</strong></li>
+            <li><strong>Serving routine</strong></li>
+            <li><strong>Movement &amp; reads</strong></li>
+            <li><strong>Live reps</strong></li>
         </ul>
     </section>
 
