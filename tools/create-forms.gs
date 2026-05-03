@@ -1,5 +1,5 @@
 // ============================================
-// Elevate Lawrence Volleyball — Agreement Forms
+// Elevate Lawrence Volleyball Club — Agreement Forms
 // Paste into script.google.com and run createBothForms()
 // ============================================
 
@@ -12,9 +12,9 @@ function createBothForms() {
 // PLAYER EXPECTATIONS AGREEMENT
 // ============================================
 function createPlayerExpectationsForm() {
-  var form = FormApp.create('Elevate Lawrence Volleyball — Player Expectations Agreement');
+  var form = FormApp.create('Elevate Lawrence Volleyball Club — Player Expectations Agreement');
   form.setDescription(
-    'Welcome to Elevate Lawrence Volleyball! Before the season begins, we ask every player to read and agree to the expectations below. ' +
+    'Welcome to Elevate Lawrence Volleyball Club! Before the season begins, we ask every player to read and agree to the expectations below. ' +
     'These are the standards we hold ourselves to as a team. By signing this form, you are committing to being the best teammate, athlete, and person you can be.\n\n' +
     'Our core values: Energy · Leadership · Effort · Versatility · Agility · Teamwork · Encouragement'
   );
@@ -75,7 +75,7 @@ function createPlayerExpectationsForm() {
       'I will attend all practices and games unless I have communicated an absence to my coach in advance.',
       'I understand that unexcused absences affect the whole team.',
       'I will take care of my gear, my body, and my attitude.',
-      'I will represent Elevate Lawrence Volleyball with pride — at tournaments, at school, and online.'
+      'I will represent Elevate Lawrence Volleyball Club with pride — at tournaments, at school, and online.'
     ])
     .setRequired(true);
 
@@ -114,9 +114,9 @@ function createPlayerExpectationsForm() {
 // PARENT/GUARDIAN EXPECTATIONS AGREEMENT
 // ============================================
 function createParentExpectationsForm() {
-  var form = FormApp.create('Elevate Lawrence Volleyball — Parent/Guardian Expectations Agreement');
+  var form = FormApp.create('Elevate Lawrence Volleyball Club — Parent/Guardian Expectations Agreement');
   form.setDescription(
-    'Thank you for trusting Elevate Lawrence Volleyball with your athlete! We believe the best results happen when coaches, players, and parents are all on the same page. ' +
+    'Thank you for trusting Elevate Lawrence Volleyball Club with your athlete! We believe the best results happen when coaches, players, and parents are all on the same page. ' +
     'Please read the expectations below and sign at the bottom. These help us create the positive, growth-focused environment every player deserves.\n\n' +
     'Our coaching philosophy is built on: positive coaching, effort over outcome, filling emotional tanks, and honoring the game.'
   );
