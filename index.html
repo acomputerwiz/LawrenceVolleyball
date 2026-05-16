@@ -114,7 +114,6 @@
         <div class="nav-links" id="navLinks">
             <a href="/" class="active">Home</a>
             <a href="/coaches/">Coaches</a>
-            <a href="#open-gym">Open Gym</a>
             <a href="#clinics">Clinics</a>
             <a href="/schedule/">Schedule</a>
             <a href="/tryouts/">Tryouts</a>
@@ -153,6 +152,7 @@
     @media (max-width: 700px) {
         #clinics .clinic-card-grid { grid-template-columns: 1fr !important; gap: 16px !important; text-align: center; }
         #clinics .clinic-card-arrow { justify-self: center; }
+        #clinics .summer-event-grid { grid-template-columns: 1fr !important; }
     }
 </style>
 <section class="section-pad" id="clinics" style="background:var(--white); border-top:4px solid var(--pink);">
@@ -192,37 +192,115 @@
                 </div>
             </a>
 
-            <a href="/clinics/passing-serving/" style="display:block; padding:28px 32px; background:var(--navy-mid); border-radius:16px; color:var(--white); border:2px solid var(--gray-500); position:relative; overflow:hidden; opacity:0.85; transition:opacity 0.2s, transform 0.2s;" onmouseover="this.style.opacity='1';this.style.transform='translateY(-2px)';" onmouseout="this.style.opacity='0.85';this.style.transform='';">
+            <div style="padding:32px; background:var(--cream); border-radius:16px; border:2px solid var(--navy); position:relative;">
 
-                <div style="position:absolute; top:14px; right:14px; padding:4px 10px; background:var(--pink); color:var(--white); font-family:var(--font-heading); font-weight:700; font-size:0.7rem; letter-spacing:2px; border-radius:4px; text-transform:uppercase;">Full · Waitlist</div>
+                <div style="text-align:center; margin-bottom:22px;">
+                    <div style="display:inline-block; padding:5px 14px; background:var(--pink); color:var(--white); font-family:var(--font-heading); font-weight:700; font-size:0.72rem; letter-spacing:2px; border-radius:4px; text-transform:uppercase; margin-bottom:12px;">Now Open</div>
+                    <h3 style="font-family:var(--font-display); font-size:clamp(1.4rem,2.8vw,2rem); color:var(--navy); line-height:1.05; margin-bottom:8px;">SUMMER CLINICS &amp; OPEN GYM</h3>
+                    <p style="font-size:0.95rem; color:var(--gray-700); max-width:580px; margin:0 auto;">Single-night sessions at <strong style="color:var(--navy);">Holcom Park Rec Center</strong> · all times <strong style="color:var(--navy);">6:30–7:30 PM</strong> · pick your age group below.</p>
+                </div>
 
-                <div class="clinic-card-grid" style="display:grid; grid-template-columns:auto 1fr auto; gap:28px; align-items:center;">
+                <div class="summer-event-grid" style="display:grid; grid-template-columns:repeat(2, 1fr); gap:14px;">
 
-                    <div style="text-align:center; padding:12px 16px; background:var(--gray-500); border-radius:10px; min-width:96px;">
-                        <div style="font-family:var(--font-heading); font-weight:700; font-size:0.7rem; letter-spacing:2px; color:var(--white); text-transform:uppercase; opacity:0.9;">Mon</div>
-                        <div style="font-family:var(--font-display); font-size:2rem; line-height:1; color:var(--white);">May 11</div>
-                    </div>
+                    <!-- ============ 12U SERIES ============ -->
+                    <div style="padding:18px 18px 16px; background:var(--white); border-radius:12px; border:3px solid var(--gold);">
+                        <div style="text-align:center; padding-bottom:12px; margin-bottom:12px; border-bottom:1px solid var(--gray-300);">
+                            <div style="display:inline-block; padding:4px 14px; background:var(--gold); color:var(--white); font-family:var(--font-heading); font-weight:700; font-size:0.72rem; letter-spacing:2px; border-radius:4px;">12U SERIES</div>
+                        </div>
 
-                    <div>
-                        <div style="font-family:var(--font-heading); font-weight:700; font-size:0.74rem; letter-spacing:2.5px; color:var(--gray-300); text-transform:uppercase; margin-bottom:4px;">Passing &amp; Serving</div>
-                        <h3 style="font-family:var(--font-display); font-size:clamp(1.2rem,2.4vw,1.6rem); color:var(--white); line-height:1.05; margin-bottom:8px;">PASSING &amp; SERVING CLINIC</h3>
-                        <div style="display:flex; flex-wrap:wrap; gap:8px 16px; font-size:0.85rem; color:var(--gray-300);">
-                            <span>⏱ 6:00–7:30 PM</span>
-                            <span>📍 Holcom Park Rec</span>
-                            <span>👥 Current 7th–8th</span>
+                        <div style="display:flex; flex-direction:column; gap:8px;">
+
+                            <!-- 12U Jun 8 Clinic -->
+                            <div style="display:flex; justify-content:space-between; align-items:center; gap:10px; padding:10px 12px; background:var(--gray-100); border-radius:8px;">
+                                <div>
+                                    <div style="font-family:var(--font-display); font-size:1.1rem; color:var(--navy); line-height:1;">Mon · Jun 8</div>
+                                    <div style="font-family:var(--font-heading); font-weight:700; font-size:0.66rem; letter-spacing:1.5px; color:var(--pink); text-transform:uppercase; margin-top:3px;">Clinic · $15</div>
+                                </div>
+                                <a href="https://forms.gle/VTgmNcp7CAPo1GPV6" target="_blank" rel="noopener" style="padding:8px 14px; background:var(--gold); color:var(--white); border-radius:6px; font-family:var(--font-heading); font-weight:700; font-size:0.72rem; letter-spacing:1px; text-transform:uppercase; white-space:nowrap;">Register →</a>
+                            </div>
+
+                            <!-- 12U Jun 15 Clinic -->
+                            <div style="display:flex; justify-content:space-between; align-items:center; gap:10px; padding:10px 12px; background:var(--gray-100); border-radius:8px;">
+                                <div>
+                                    <div style="font-family:var(--font-display); font-size:1.1rem; color:var(--navy); line-height:1;">Mon · Jun 15</div>
+                                    <div style="font-family:var(--font-heading); font-weight:700; font-size:0.66rem; letter-spacing:1.5px; color:var(--pink); text-transform:uppercase; margin-top:3px;">Clinic · $15</div>
+                                </div>
+                                <a href="https://forms.gle/ivvNz4mWfPLoZ4Ff6" target="_blank" rel="noopener" style="padding:8px 14px; background:var(--gold); color:var(--white); border-radius:6px; font-family:var(--font-heading); font-weight:700; font-size:0.72rem; letter-spacing:1px; text-transform:uppercase; white-space:nowrap;">Register →</a>
+                            </div>
+
+                            <!-- 12U Jun 23 Clinic -->
+                            <div style="display:flex; justify-content:space-between; align-items:center; gap:10px; padding:10px 12px; background:var(--gray-100); border-radius:8px;">
+                                <div>
+                                    <div style="font-family:var(--font-display); font-size:1.1rem; color:var(--navy); line-height:1;">Tue · Jun 23</div>
+                                    <div style="font-family:var(--font-heading); font-weight:700; font-size:0.66rem; letter-spacing:1.5px; color:var(--pink); text-transform:uppercase; margin-top:3px;">Clinic · $15</div>
+                                </div>
+                                <a href="https://forms.gle/F9jfxDxenqQsqjhHA" target="_blank" rel="noopener" style="padding:8px 14px; background:var(--gold); color:var(--white); border-radius:6px; font-family:var(--font-heading); font-weight:700; font-size:0.72rem; letter-spacing:1px; text-transform:uppercase; white-space:nowrap;">Register →</a>
+                            </div>
+
+                            <!-- 12U Jul 7 Open Gym -->
+                            <div style="display:flex; justify-content:space-between; align-items:center; gap:10px; padding:10px 12px; background:var(--gray-100); border-radius:8px;">
+                                <div>
+                                    <div style="font-family:var(--font-display); font-size:1.1rem; color:var(--navy); line-height:1;">Tue · Jul 7</div>
+                                    <div style="font-family:var(--font-heading); font-weight:700; font-size:0.66rem; letter-spacing:1.5px; color:var(--gold); text-transform:uppercase; margin-top:3px;">Open Gym · $10</div>
+                                </div>
+                                <a href="https://forms.gle/yDNn1x61e69HLWTb8" target="_blank" rel="noopener" style="padding:8px 14px; background:var(--gold); color:var(--white); border-radius:6px; font-family:var(--font-heading); font-weight:700; font-size:0.72rem; letter-spacing:1px; text-transform:uppercase; white-space:nowrap;">Register →</a>
+                            </div>
+
                         </div>
                     </div>
 
-                    <div class="clinic-card-arrow" style="font-family:var(--font-heading); font-weight:700; font-size:0.8rem; letter-spacing:1.5px; color:var(--gray-300); text-transform:uppercase; white-space:nowrap;">
-                        Join Waitlist &nbsp;→
+                    <!-- ============ 15U SERIES ============ -->
+                    <div style="padding:18px 18px 16px; background:var(--white); border-radius:12px; border:3px solid var(--navy);">
+                        <div style="text-align:center; padding-bottom:12px; margin-bottom:12px; border-bottom:1px solid var(--gray-300);">
+                            <div style="display:inline-block; padding:4px 14px; background:var(--navy); color:var(--white); font-family:var(--font-heading); font-weight:700; font-size:0.72rem; letter-spacing:2px; border-radius:4px;">15U SERIES</div>
+                        </div>
+
+                        <div style="display:flex; flex-direction:column; gap:8px;">
+
+                            <!-- 15U Jun 8 Clinic -->
+                            <div style="display:flex; justify-content:space-between; align-items:center; gap:10px; padding:10px 12px; background:var(--gray-100); border-radius:8px;">
+                                <div>
+                                    <div style="font-family:var(--font-display); font-size:1.1rem; color:var(--navy); line-height:1;">Mon · Jun 8</div>
+                                    <div style="font-family:var(--font-heading); font-weight:700; font-size:0.66rem; letter-spacing:1.5px; color:var(--pink); text-transform:uppercase; margin-top:3px;">Clinic · $15</div>
+                                </div>
+                                <a href="https://forms.gle/3zJny1gT3YzmSCNJA" target="_blank" rel="noopener" style="padding:8px 14px; background:var(--navy); color:var(--white); border-radius:6px; font-family:var(--font-heading); font-weight:700; font-size:0.72rem; letter-spacing:1px; text-transform:uppercase; white-space:nowrap;">Register →</a>
+                            </div>
+
+                            <!-- 15U Jun 15 Open Gym -->
+                            <div style="display:flex; justify-content:space-between; align-items:center; gap:10px; padding:10px 12px; background:var(--gray-100); border-radius:8px;">
+                                <div>
+                                    <div style="font-family:var(--font-display); font-size:1.1rem; color:var(--navy); line-height:1;">Mon · Jun 15</div>
+                                    <div style="font-family:var(--font-heading); font-weight:700; font-size:0.66rem; letter-spacing:1.5px; color:var(--gold); text-transform:uppercase; margin-top:3px;">Open Gym · $10</div>
+                                </div>
+                                <a href="https://forms.gle/zy99razTGWRL6ste7" target="_blank" rel="noopener" style="padding:8px 14px; background:var(--navy); color:var(--white); border-radius:6px; font-family:var(--font-heading); font-weight:700; font-size:0.72rem; letter-spacing:1px; text-transform:uppercase; white-space:nowrap;">Register →</a>
+                            </div>
+
+                            <!-- 15U Jun 23 Clinic -->
+                            <div style="display:flex; justify-content:space-between; align-items:center; gap:10px; padding:10px 12px; background:var(--gray-100); border-radius:8px;">
+                                <div>
+                                    <div style="font-family:var(--font-display); font-size:1.1rem; color:var(--navy); line-height:1;">Tue · Jun 23</div>
+                                    <div style="font-family:var(--font-heading); font-weight:700; font-size:0.66rem; letter-spacing:1.5px; color:var(--pink); text-transform:uppercase; margin-top:3px;">Clinic · $15</div>
+                                </div>
+                                <a href="https://forms.gle/4sM6WAXsmcqbyMMQ8" target="_blank" rel="noopener" style="padding:8px 14px; background:var(--navy); color:var(--white); border-radius:6px; font-family:var(--font-heading); font-weight:700; font-size:0.72rem; letter-spacing:1px; text-transform:uppercase; white-space:nowrap;">Register →</a>
+                            </div>
+
+                            <!-- 15U Jul 7 Open Gym -->
+                            <div style="display:flex; justify-content:space-between; align-items:center; gap:10px; padding:10px 12px; background:var(--gray-100); border-radius:8px;">
+                                <div>
+                                    <div style="font-family:var(--font-display); font-size:1.1rem; color:var(--navy); line-height:1;">Tue · Jul 7</div>
+                                    <div style="font-family:var(--font-heading); font-weight:700; font-size:0.66rem; letter-spacing:1.5px; color:var(--gold); text-transform:uppercase; margin-top:3px;">Open Gym · $10</div>
+                                </div>
+                                <a href="https://forms.gle/EVN6qBYNt5dik9V79" target="_blank" rel="noopener" style="padding:8px 14px; background:var(--navy); color:var(--white); border-radius:6px; font-family:var(--font-heading); font-weight:700; font-size:0.72rem; letter-spacing:1px; text-transform:uppercase; white-space:nowrap;">Register →</a>
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>
-            </a>
+
+            </div>
 
         </div>
-
-        <p style="text-align:center; margin-top:20px; font-size:0.88rem; color:var(--gray-500);">More clinics on the way (defense up next). <a href="#contact" style="color:var(--gold); text-decoration:underline;">Get on the list →</a></p>
     </div>
 </section>
 
@@ -322,49 +400,6 @@
     </div>
 </section>
 
-<!-- OPEN GYM -->
-<section class="section-pad" id="open-gym" style="background:var(--gray-100);">
-    <div class="container">
-        <div class="text-center">
-            <div class="section-label">Drop-In Sessions</div>
-            <h2 class="section-title">OPEN GYM</h2>
-            <p class="section-subtitle">Structured open gym sessions in Lawrence for youth players. Show up, warm up, and play.</p>
-        </div>
-        <div class="gym-grid">
-            <div class="gym-card">
-                <div class="gym-header juniors">
-                    <div class="gym-tag">15U</div>
-                    <h3>15U OPEN GYM</h3>
-                    <p>Competitive reps, position-specific drills, and live play to sharpen skills heading into the season.</p>
-                </div>
-                <div class="gym-details">
-                    <div class="gym-detail"><div class="icon">📅</div><div><strong>Days & Times TBD</strong></div></div>
-                    <div class="gym-detail"><div class="icon">📍</div><div><strong>PLACEHOLDER LOCATION</strong> — Lawrence, KS</div></div>
-                    <div class="gym-detail"><div class="icon">💲</div><div><strong>$10 drop-in</strong></div></div>
-                    <div class="gym-detail"><div class="icon">📋</div><div>Waiver required — <a href="#contact" style="color:var(--gold);text-decoration:underline;">contact us</a></div></div>
-                </div>
-            </div>
-            <div class="gym-card">
-                <div class="gym-header juniors">
-                    <div class="gym-tag">12U</div>
-                    <h3>12U OPEN GYM</h3>
-                    <p>Skill-focused sessions with drills, games, and coached play. A great space to develop volleyball fundamentals and build confidence.</p>
-                </div>
-                <div class="gym-details">
-                    <div class="gym-detail"><div class="icon">📅</div><div><strong>Days & Times TBD</strong></div></div>
-                    <div class="gym-detail"><div class="icon">📍</div><div><strong>PLACEHOLDER LOCATION</strong> — Lawrence, KS</div></div>
-                    <div class="gym-detail"><div class="icon">💲</div><div><strong>$10 drop-in</strong></div></div>
-                    <div class="gym-detail"><div class="icon">📋</div><div>Waiver required — <a href="#contact" style="color:var(--gold);text-decoration:underline;">contact us</a></div></div>
-                </div>
-            </div>
-        </div>
-        <div class="text-center" style="margin-top:32px;">
-            <a href="/schedule/" class="btn btn-navy">View Full Schedule & Subscribe</a>
-        </div>
-    </div>
-</section>
-
-
 <!-- CONTACT -->
 <section class="section-pad" id="contact" style="background:var(--gray-100);">
     <div class="container">
@@ -431,7 +466,6 @@
                 <div class="footer-links">
                     <a href="#mission">Mission</a>
                     <a href="#clinics">Clinics</a>
-                    <a href="#open-gym">Open Gym</a>
                     <a href="#contact">Contact</a>
                 </div>
             </div>
