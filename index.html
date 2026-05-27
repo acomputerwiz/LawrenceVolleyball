@@ -151,7 +151,9 @@
     @media (max-width: 700px) {
         #clinics .clinic-card-grid { grid-template-columns: 1fr !important; gap: 16px !important; text-align: center; }
         #clinics .clinic-card-arrow { justify-self: center; }
-        #clinics .summer-event-grid { grid-template-columns: 1fr !important; }
+        #clinics .summer-event-row { flex-direction: column !important; align-items: stretch !important; text-align: center !important; }
+        #clinics .summer-event-row > div:last-child { justify-content: center; }
+        #clinics .summer-event-row > div:last-child a { flex: 1; text-align: center; }
         #clinics .waiver-banner,
         #clinics .venmo-banner { flex-direction: column !important; align-items: stretch !important; text-align: center !important; }
         #clinics .waiver-banner > div:last-child,
@@ -177,7 +179,7 @@
                 </div>
 
                 <!-- WAIVER BANNER -->
-                <a href="https://form.jotform.com/261370889583067" target="_blank" rel="noopener" class="waiver-banner" style="display:flex; justify-content:space-between; align-items:center; gap:18px; padding:18px 24px; background:var(--white); border:3px solid var(--pink); border-radius:12px; margin-bottom:18px; text-decoration:none; transition:transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 24px rgba(236,72,153,0.2)';" onmouseout="this.style.transform='';this.style.boxShadow='';">
+                <a href="https://forms.gle/RVWdSZiKcFQTuMsp8" target="_blank" rel="noopener" class="waiver-banner" style="display:flex; justify-content:space-between; align-items:center; gap:18px; padding:18px 24px; background:var(--white); border:3px solid var(--pink); border-radius:12px; margin-bottom:18px; text-decoration:none; transition:transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 24px rgba(236,72,153,0.2)';" onmouseout="this.style.transform='';this.style.boxShadow='';">
                     <div>
                         <div style="font-family:var(--font-heading); font-weight:700; font-size:0.7rem; letter-spacing:2px; color:var(--pink); text-transform:uppercase; margin-bottom:4px;">⚠ One-Time Waiver</div>
                         <div style="font-family:var(--font-display); font-size:1.4rem; color:var(--navy); line-height:1.1; margin-bottom:4px;">SIGN THE CLUB WAIVER</div>
@@ -186,99 +188,53 @@
                     <div style="padding:12px 18px; background:var(--gold); color:var(--white); border-radius:8px; font-family:var(--font-heading); font-weight:700; font-size:0.85rem; letter-spacing:1.5px; text-transform:uppercase; white-space:nowrap;">Sign Waiver →</div>
                 </a>
 
-                <div class="summer-event-grid" style="display:grid; grid-template-columns:repeat(2, 1fr); gap:14px;">
+                <div class="summer-event-list" style="display:flex; flex-direction:column; gap:12px; max-width:600px; margin:0 auto;">
 
-                    <!-- ============ 12U SERIES ============ -->
-                    <div style="padding:18px 18px 16px; background:var(--white); border-radius:12px; border:3px solid var(--gold);">
-                        <div style="text-align:center; padding-bottom:12px; margin-bottom:12px; border-bottom:1px solid var(--gray-300);">
-                            <div style="display:inline-block; padding:4px 14px; background:var(--gold); color:var(--white); font-family:var(--font-heading); font-weight:700; font-size:0.72rem; letter-spacing:2px; border-radius:4px;">12U SERIES</div>
+                    <!-- Mon Jun 8 -->
+                    <div class="summer-event-row" style="display:flex; justify-content:space-between; align-items:center; gap:14px; padding:14px 18px; background:var(--white); border-radius:10px; border:2px solid var(--gray-300);">
+                        <div>
+                            <div style="font-family:var(--font-display); font-size:1.4rem; color:var(--navy); line-height:1;">Mon · Jun 8</div>
+                            <div style="font-family:var(--font-heading); font-weight:700; font-size:0.7rem; letter-spacing:1.5px; color:var(--pink); text-transform:uppercase; margin-top:4px;">Clinic · $15</div>
                         </div>
-
-                        <div style="display:flex; flex-direction:column; gap:8px;">
-
-                            <!-- 12U Jun 8 Clinic -->
-                            <div style="display:flex; justify-content:space-between; align-items:center; gap:10px; padding:10px 12px; background:var(--gray-100); border-radius:8px;">
-                                <div>
-                                    <div style="font-family:var(--font-display); font-size:1.1rem; color:var(--navy); line-height:1;">Mon · Jun 8</div>
-                                    <div style="font-family:var(--font-heading); font-weight:700; font-size:0.66rem; letter-spacing:1.5px; color:var(--pink); text-transform:uppercase; margin-top:3px;">Clinic · $15</div>
-                                </div>
-                                <a href="https://forms.gle/VTgmNcp7CAPo1GPV6" target="_blank" rel="noopener" style="padding:8px 14px; background:var(--gold); color:var(--white); border-radius:6px; font-family:var(--font-heading); font-weight:700; font-size:0.72rem; letter-spacing:1px; text-transform:uppercase; white-space:nowrap;">Register 12U →</a>
-                            </div>
-
-                            <!-- 12U Jun 15 Clinic -->
-                            <div style="display:flex; justify-content:space-between; align-items:center; gap:10px; padding:10px 12px; background:var(--gray-100); border-radius:8px;">
-                                <div>
-                                    <div style="font-family:var(--font-display); font-size:1.1rem; color:var(--navy); line-height:1;">Mon · Jun 15</div>
-                                    <div style="font-family:var(--font-heading); font-weight:700; font-size:0.66rem; letter-spacing:1.5px; color:var(--pink); text-transform:uppercase; margin-top:3px;">Clinic · $15</div>
-                                </div>
-                                <a href="https://forms.gle/ivvNz4mWfPLoZ4Ff6" target="_blank" rel="noopener" style="padding:8px 14px; background:var(--gold); color:var(--white); border-radius:6px; font-family:var(--font-heading); font-weight:700; font-size:0.72rem; letter-spacing:1px; text-transform:uppercase; white-space:nowrap;">Register 12U →</a>
-                            </div>
-
-                            <!-- 12U Jun 23 Clinic -->
-                            <div style="display:flex; justify-content:space-between; align-items:center; gap:10px; padding:10px 12px; background:var(--gray-100); border-radius:8px;">
-                                <div>
-                                    <div style="font-family:var(--font-display); font-size:1.1rem; color:var(--navy); line-height:1;">Tue · Jun 23</div>
-                                    <div style="font-family:var(--font-heading); font-weight:700; font-size:0.66rem; letter-spacing:1.5px; color:var(--pink); text-transform:uppercase; margin-top:3px;">Clinic · $15</div>
-                                </div>
-                                <a href="https://forms.gle/F9jfxDxenqQsqjhHA" target="_blank" rel="noopener" style="padding:8px 14px; background:var(--gold); color:var(--white); border-radius:6px; font-family:var(--font-heading); font-weight:700; font-size:0.72rem; letter-spacing:1px; text-transform:uppercase; white-space:nowrap;">Register 12U →</a>
-                            </div>
-
-                            <!-- 12U Jul 7 Clinic -->
-                            <div style="display:flex; justify-content:space-between; align-items:center; gap:10px; padding:10px 12px; background:var(--gray-100); border-radius:8px;">
-                                <div>
-                                    <div style="font-family:var(--font-display); font-size:1.1rem; color:var(--navy); line-height:1;">Tue · Jul 7</div>
-                                    <div style="font-family:var(--font-heading); font-weight:700; font-size:0.66rem; letter-spacing:1.5px; color:var(--pink); text-transform:uppercase; margin-top:3px;">Clinic · $15</div>
-                                </div>
-                                <a href="https://forms.gle/yDNn1x61e69HLWTb8" target="_blank" rel="noopener" style="padding:8px 14px; background:var(--gold); color:var(--white); border-radius:6px; font-family:var(--font-heading); font-weight:700; font-size:0.72rem; letter-spacing:1px; text-transform:uppercase; white-space:nowrap;">Register 12U →</a>
-                            </div>
-
+                        <div style="display:flex; gap:8px; flex-shrink:0;">
+                            <a href="https://forms.gle/VTgmNcp7CAPo1GPV6" target="_blank" rel="noopener" style="padding:10px 14px; background:var(--gold); color:var(--white); border-radius:6px; font-family:var(--font-heading); font-weight:700; font-size:0.74rem; letter-spacing:1px; text-transform:uppercase; white-space:nowrap;">Register 12U →</a>
+                            <a href="https://forms.gle/3zJny1gT3YzmSCNJA" target="_blank" rel="noopener" style="padding:10px 14px; background:var(--navy); color:var(--white); border-radius:6px; font-family:var(--font-heading); font-weight:700; font-size:0.74rem; letter-spacing:1px; text-transform:uppercase; white-space:nowrap;">Register 15U →</a>
                         </div>
                     </div>
 
-                    <!-- ============ 15U SERIES ============ -->
-                    <div style="padding:18px 18px 16px; background:var(--white); border-radius:12px; border:3px solid var(--navy);">
-                        <div style="text-align:center; padding-bottom:12px; margin-bottom:12px; border-bottom:1px solid var(--gray-300);">
-                            <div style="display:inline-block; padding:4px 14px; background:var(--navy); color:var(--white); font-family:var(--font-heading); font-weight:700; font-size:0.72rem; letter-spacing:2px; border-radius:4px;">15U SERIES</div>
+                    <!-- Mon Jun 15 -->
+                    <div class="summer-event-row" style="display:flex; justify-content:space-between; align-items:center; gap:14px; padding:14px 18px; background:var(--white); border-radius:10px; border:2px solid var(--gray-300);">
+                        <div>
+                            <div style="font-family:var(--font-display); font-size:1.4rem; color:var(--navy); line-height:1;">Mon · Jun 15</div>
+                            <div style="font-family:var(--font-heading); font-weight:700; font-size:0.7rem; letter-spacing:1.5px; color:var(--pink); text-transform:uppercase; margin-top:4px;">Clinic · $15</div>
                         </div>
+                        <div style="display:flex; gap:8px; flex-shrink:0;">
+                            <a href="https://forms.gle/ivvNz4mWfPLoZ4Ff6" target="_blank" rel="noopener" style="padding:10px 14px; background:var(--gold); color:var(--white); border-radius:6px; font-family:var(--font-heading); font-weight:700; font-size:0.74rem; letter-spacing:1px; text-transform:uppercase; white-space:nowrap;">Register 12U →</a>
+                            <a href="https://forms.gle/zy99razTGWRL6ste7" target="_blank" rel="noopener" style="padding:10px 14px; background:var(--navy); color:var(--white); border-radius:6px; font-family:var(--font-heading); font-weight:700; font-size:0.74rem; letter-spacing:1px; text-transform:uppercase; white-space:nowrap;">Register 15U →</a>
+                        </div>
+                    </div>
 
-                        <div style="display:flex; flex-direction:column; gap:8px;">
+                    <!-- Tue Jun 23 -->
+                    <div class="summer-event-row" style="display:flex; justify-content:space-between; align-items:center; gap:14px; padding:14px 18px; background:var(--white); border-radius:10px; border:2px solid var(--gray-300);">
+                        <div>
+                            <div style="font-family:var(--font-display); font-size:1.4rem; color:var(--navy); line-height:1;">Tue · Jun 23</div>
+                            <div style="font-family:var(--font-heading); font-weight:700; font-size:0.7rem; letter-spacing:1.5px; color:var(--pink); text-transform:uppercase; margin-top:4px;">Clinic · $15</div>
+                        </div>
+                        <div style="display:flex; gap:8px; flex-shrink:0;">
+                            <a href="https://forms.gle/F9jfxDxenqQsqjhHA" target="_blank" rel="noopener" style="padding:10px 14px; background:var(--gold); color:var(--white); border-radius:6px; font-family:var(--font-heading); font-weight:700; font-size:0.74rem; letter-spacing:1px; text-transform:uppercase; white-space:nowrap;">Register 12U →</a>
+                            <a href="https://forms.gle/4sM6WAXsmcqbyMMQ8" target="_blank" rel="noopener" style="padding:10px 14px; background:var(--navy); color:var(--white); border-radius:6px; font-family:var(--font-heading); font-weight:700; font-size:0.74rem; letter-spacing:1px; text-transform:uppercase; white-space:nowrap;">Register 15U →</a>
+                        </div>
+                    </div>
 
-                            <!-- 15U Jun 8 Clinic -->
-                            <div style="display:flex; justify-content:space-between; align-items:center; gap:10px; padding:10px 12px; background:var(--gray-100); border-radius:8px;">
-                                <div>
-                                    <div style="font-family:var(--font-display); font-size:1.1rem; color:var(--navy); line-height:1;">Mon · Jun 8</div>
-                                    <div style="font-family:var(--font-heading); font-weight:700; font-size:0.66rem; letter-spacing:1.5px; color:var(--pink); text-transform:uppercase; margin-top:3px;">Clinic · $15</div>
-                                </div>
-                                <a href="https://forms.gle/3zJny1gT3YzmSCNJA" target="_blank" rel="noopener" style="padding:8px 14px; background:var(--navy); color:var(--white); border-radius:6px; font-family:var(--font-heading); font-weight:700; font-size:0.72rem; letter-spacing:1px; text-transform:uppercase; white-space:nowrap;">Register 15U →</a>
-                            </div>
-
-                            <!-- 15U Jun 15 Clinic -->
-                            <div style="display:flex; justify-content:space-between; align-items:center; gap:10px; padding:10px 12px; background:var(--gray-100); border-radius:8px;">
-                                <div>
-                                    <div style="font-family:var(--font-display); font-size:1.1rem; color:var(--navy); line-height:1;">Mon · Jun 15</div>
-                                    <div style="font-family:var(--font-heading); font-weight:700; font-size:0.66rem; letter-spacing:1.5px; color:var(--pink); text-transform:uppercase; margin-top:3px;">Clinic · $15</div>
-                                </div>
-                                <a href="https://forms.gle/zy99razTGWRL6ste7" target="_blank" rel="noopener" style="padding:8px 14px; background:var(--navy); color:var(--white); border-radius:6px; font-family:var(--font-heading); font-weight:700; font-size:0.72rem; letter-spacing:1px; text-transform:uppercase; white-space:nowrap;">Register 15U →</a>
-                            </div>
-
-                            <!-- 15U Jun 23 Clinic -->
-                            <div style="display:flex; justify-content:space-between; align-items:center; gap:10px; padding:10px 12px; background:var(--gray-100); border-radius:8px;">
-                                <div>
-                                    <div style="font-family:var(--font-display); font-size:1.1rem; color:var(--navy); line-height:1;">Tue · Jun 23</div>
-                                    <div style="font-family:var(--font-heading); font-weight:700; font-size:0.66rem; letter-spacing:1.5px; color:var(--pink); text-transform:uppercase; margin-top:3px;">Clinic · $15</div>
-                                </div>
-                                <a href="https://forms.gle/4sM6WAXsmcqbyMMQ8" target="_blank" rel="noopener" style="padding:8px 14px; background:var(--navy); color:var(--white); border-radius:6px; font-family:var(--font-heading); font-weight:700; font-size:0.72rem; letter-spacing:1px; text-transform:uppercase; white-space:nowrap;">Register 15U →</a>
-                            </div>
-
-                            <!-- 15U Jul 7 Clinic -->
-                            <div style="display:flex; justify-content:space-between; align-items:center; gap:10px; padding:10px 12px; background:var(--gray-100); border-radius:8px;">
-                                <div>
-                                    <div style="font-family:var(--font-display); font-size:1.1rem; color:var(--navy); line-height:1;">Tue · Jul 7</div>
-                                    <div style="font-family:var(--font-heading); font-weight:700; font-size:0.66rem; letter-spacing:1.5px; color:var(--pink); text-transform:uppercase; margin-top:3px;">Clinic · $15</div>
-                                </div>
-                                <a href="https://forms.gle/EVN6qBYNt5dik9V79" target="_blank" rel="noopener" style="padding:8px 14px; background:var(--navy); color:var(--white); border-radius:6px; font-family:var(--font-heading); font-weight:700; font-size:0.72rem; letter-spacing:1px; text-transform:uppercase; white-space:nowrap;">Register 15U →</a>
-                            </div>
-
+                    <!-- Tue Jul 7 -->
+                    <div class="summer-event-row" style="display:flex; justify-content:space-between; align-items:center; gap:14px; padding:14px 18px; background:var(--white); border-radius:10px; border:2px solid var(--gray-300);">
+                        <div>
+                            <div style="font-family:var(--font-display); font-size:1.4rem; color:var(--navy); line-height:1;">Tue · Jul 7</div>
+                            <div style="font-family:var(--font-heading); font-weight:700; font-size:0.7rem; letter-spacing:1.5px; color:var(--pink); text-transform:uppercase; margin-top:4px;">Clinic · $15</div>
+                        </div>
+                        <div style="display:flex; gap:8px; flex-shrink:0;">
+                            <a href="https://forms.gle/yDNn1x61e69HLWTb8" target="_blank" rel="noopener" style="padding:10px 14px; background:var(--gold); color:var(--white); border-radius:6px; font-family:var(--font-heading); font-weight:700; font-size:0.74rem; letter-spacing:1px; text-transform:uppercase; white-space:nowrap;">Register 12U →</a>
+                            <a href="https://forms.gle/EVN6qBYNt5dik9V79" target="_blank" rel="noopener" style="padding:10px 14px; background:var(--navy); color:var(--white); border-radius:6px; font-family:var(--font-heading); font-weight:700; font-size:0.74rem; letter-spacing:1px; text-transform:uppercase; white-space:nowrap;">Register 15U →</a>
                         </div>
                     </div>
 
