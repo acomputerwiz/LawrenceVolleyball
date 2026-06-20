@@ -104,8 +104,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
+
+    <!-- Tryouts bar overrides — push fixed navbar + hero content down to make room -->
+    <style>
+        .tryouts-bar { height: 44px; }
+        .navbar { top: 44px !important; }
+        .hero { padding-top: calc(var(--nav-height) + 44px + 32px) !important; }
+        @media (max-width: 700px) {
+            .tryouts-bar { font-size: 0.78rem !important; letter-spacing: 1px !important; }
+        }
+    </style>
 </head>
 <body>
+
+<!-- TRYOUTS ANNOUNCEMENT BAR -->
+<a href="/tryouts/" class="tryouts-bar" style="position:fixed; top:0; left:0; right:0; z-index:1001; display:flex; align-items:center; justify-content:center; background:linear-gradient(90deg, var(--pink) 0%, #d4267a 100%); color:var(--white); padding:0 16px; text-align:center; font-family:var(--font-heading); font-weight:700; font-size:0.92rem; letter-spacing:1.5px; text-transform:uppercase; text-decoration:none; border-bottom:3px solid var(--gold);">
+    🏐 Tryouts · July 11 &amp; 12 · Register Now →
+</a>
 
 <!-- NAVBAR -->
 <nav class="navbar" role="navigation" aria-label="Main navigation">
