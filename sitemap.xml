@@ -26,6 +26,11 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://elevatelawrencevb.com/club-volleyball-lawrence/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://elevatelawrencevb.com/flyer.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
