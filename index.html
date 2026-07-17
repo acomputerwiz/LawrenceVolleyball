@@ -106,22 +106,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
 
-    <!-- Tryouts bar overrides — push fixed navbar + hero content down to make room -->
-    <style>
-        .tryouts-bar { height: 44px; }
-        .navbar { top: 44px !important; }
-        .hero { padding-top: calc(var(--nav-height) + 44px + 32px) !important; }
-        @media (max-width: 700px) {
-            .tryouts-bar { font-size: 0.78rem !important; letter-spacing: 1px !important; }
-        }
-    </style>
 </head>
 <body>
-
-<!-- TRYOUTS ANNOUNCEMENT BAR -->
-<a href="/tryouts/" class="tryouts-bar" style="position:fixed; top:0; left:0; right:0; z-index:1001; display:flex; align-items:center; justify-content:center; background:linear-gradient(90deg, var(--pink) 0%, #d4267a 100%); color:var(--white); padding:0 16px; text-align:center; font-family:var(--font-heading); font-weight:700; font-size:0.92rem; letter-spacing:1.5px; text-transform:uppercase; text-decoration:none; border-bottom:3px solid var(--gold);">
-    🏐 Tryouts · July 11 &amp; 12 · Register Now →
-</a>
 
 <!-- NAVBAR -->
 <nav class="navbar" role="navigation" aria-label="Main navigation">
@@ -154,7 +140,7 @@
                 ELEVATE YOUR
                 <span class="highlight">GAME & CHARACTER</span>
             </h1>
-            <p>We develop junior volleyball players — 12U and 15U for the 2026-2027 Season.  With coaching that emphasizes encouragement, growth mindset, and competitive excellence in Lawrence, KS.</p>
+            <p>We develop junior volleyball players — 12U and 15U for the 2026-2027 Season.  With coaching that emphasizes encouragement, growth mindset, and respect in Lawrence, KS.</p>
             <div class="hero-actions">
                 <a href="#contact" class="btn btn-gold">Contact Us</a>
                 <a href="/schedule/" class="btn btn-outline">View Schedule</a>
@@ -171,9 +157,7 @@
         #clinics .summer-event-row { flex-direction: column !important; align-items: stretch !important; text-align: center !important; }
         #clinics .summer-event-row > div:last-child { justify-content: center; }
         #clinics .summer-event-row > div:last-child a { flex: 1; text-align: center; }
-        #clinics .waiver-banner,
         #clinics .venmo-banner { flex-direction: column !important; align-items: stretch !important; text-align: center !important; }
-        #clinics .waiver-banner > div:last-child,
         #clinics .venmo-banner > div:last-child { text-align: center; }
     }
 </style>
@@ -192,18 +176,8 @@
                 <div style="text-align:center; margin-bottom:22px;">
                     <div style="display:inline-block; padding:5px 14px; background:var(--pink); color:var(--white); font-family:var(--font-heading); font-weight:700; font-size:0.72rem; letter-spacing:2px; border-radius:4px; text-transform:uppercase; margin-bottom:12px;">Now Open</div>
                     <h3 style="font-family:var(--font-display); font-size:clamp(1.4rem,2.8vw,2rem); color:var(--navy); line-height:1.05; margin-bottom:8px;">SUMMER OPEN GYMS</h3>
-                    <p style="font-size:0.95rem; color:var(--gray-700); max-width:580px; margin:0 auto;">Single-night sessions at <strong style="color:var(--navy);">Holcom Park Rec Center</strong> · all times <strong style="color:var(--navy);">6:30–7:30 PM</strong> · <strong style="color:var(--navy);">3 steps:</strong> sign waiver · register · pay</p>
+                    <p style="font-size:0.95rem; color:var(--gray-700); max-width:580px; margin:0 auto;">Single-night sessions at <strong style="color:var(--navy);">Sports Pavilion Lawrence</strong> · all times <strong style="color:var(--navy);">6:30–7:30 PM</strong> · <strong style="color:var(--navy);">2 steps:</strong> register · pay</p>
                 </div>
-
-                <!-- WAIVER BANNER -->
-                <a href="https://forms.gle/RVWdSZiKcFQTuMsp8" target="_blank" rel="noopener" class="waiver-banner" style="display:flex; justify-content:space-between; align-items:center; gap:18px; padding:18px 24px; background:var(--white); border:3px solid var(--pink); border-radius:12px; margin-bottom:18px; text-decoration:none; transition:transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 24px rgba(236,72,153,0.2)';" onmouseout="this.style.transform='';this.style.boxShadow='';">
-                    <div>
-                        <div style="font-family:var(--font-heading); font-weight:700; font-size:0.7rem; letter-spacing:2px; color:var(--pink); text-transform:uppercase; margin-bottom:4px;">⚠ One-Time Waiver</div>
-                        <div style="font-family:var(--font-display); font-size:1.4rem; color:var(--navy); line-height:1.1; margin-bottom:4px;">SIGN THE CLUB WAIVER</div>
-                        <div style="font-size:0.88rem; color:var(--gray-700);">Once per athlete · covers every open gym and tryouts</div>
-                    </div>
-                    <div style="padding:12px 18px; background:var(--gold); color:var(--white); border-radius:8px; font-family:var(--font-heading); font-weight:700; font-size:0.85rem; letter-spacing:1.5px; text-transform:uppercase; white-space:nowrap;">Sign Waiver →</div>
-                </a>
 
                 <!-- AGE GROUP LEGEND -->
                 <p style="text-align:center; font-size:0.85rem; color:var(--gray-700); max-width:600px; margin:0 auto 12px;">
@@ -215,15 +189,39 @@
 
                 <div class="summer-event-list" style="display:flex; flex-direction:column; gap:12px;">
 
-                    <!-- Mon Jul 13 -->
+                    <!-- Mon Jul 20 -->
                     <div class="summer-event-row" style="display:flex; justify-content:space-between; align-items:center; gap:18px; padding:18px 24px; background:var(--white); border-radius:12px; border:3px solid var(--gray-300);">
                         <div>
-                            <div style="font-family:var(--font-display); font-size:1.4rem; color:var(--navy); line-height:1;">Mon · Jul 13</div>
-                            <div style="font-family:var(--font-heading); font-weight:700; font-size:0.7rem; letter-spacing:1.5px; color:var(--pink); text-transform:uppercase; margin-top:4px;">Open Gym / Tryout · $10</div>
+                            <div style="font-family:var(--font-display); font-size:1.4rem; color:var(--navy); line-height:1;">Mon · Jul 20</div>
+                            <div style="font-family:var(--font-heading); font-weight:700; font-size:0.7rem; letter-spacing:1.5px; color:var(--pink); text-transform:uppercase; margin-top:4px;">Open Gym · $10</div>
                         </div>
                         <div style="display:flex; gap:8px; flex-shrink:0;">
-                            <a href="https://forms.gle/3uMVNfwpcxMr6wDG6" target="_blank" rel="noopener" style="padding:12px 18px; background:var(--gold); color:var(--white); border-radius:8px; font-family:var(--font-heading); font-weight:700; font-size:0.85rem; letter-spacing:1.5px; text-transform:uppercase; white-space:nowrap;">Register 12U →</a>
-                            <a href="https://forms.gle/3uMVNfwpcxMr6wDG6" target="_blank" rel="noopener" style="padding:12px 18px; background:var(--pink); color:var(--white); border-radius:8px; font-family:var(--font-heading); font-weight:700; font-size:0.85rem; letter-spacing:1.5px; text-transform:uppercase; white-space:nowrap;">Register 15U →</a>
+                            <a href="https://forms.gle/o1QbzpczE8iFRcMa9" target="_blank" rel="noopener" style="padding:12px 18px; background:var(--gold); color:var(--white); border-radius:8px; font-family:var(--font-heading); font-weight:700; font-size:0.85rem; letter-spacing:1.5px; text-transform:uppercase; white-space:nowrap;">Register 12U →</a>
+                            <a href="https://forms.gle/o1QbzpczE8iFRcMa9" target="_blank" rel="noopener" style="padding:12px 18px; background:var(--pink); color:var(--white); border-radius:8px; font-family:var(--font-heading); font-weight:700; font-size:0.85rem; letter-spacing:1.5px; text-transform:uppercase; white-space:nowrap;">Register 15U →</a>
+                        </div>
+                    </div>
+
+                    <!-- Tue Jul 28 -->
+                    <div class="summer-event-row" style="display:flex; justify-content:space-between; align-items:center; gap:18px; padding:18px 24px; background:var(--white); border-radius:12px; border:3px solid var(--gray-300);">
+                        <div>
+                            <div style="font-family:var(--font-display); font-size:1.4rem; color:var(--navy); line-height:1;">Tue · Jul 28</div>
+                            <div style="font-family:var(--font-heading); font-weight:700; font-size:0.7rem; letter-spacing:1.5px; color:var(--pink); text-transform:uppercase; margin-top:4px;">Open Gym · $10</div>
+                        </div>
+                        <div style="display:flex; gap:8px; flex-shrink:0;">
+                            <a href="https://forms.gle/o1QbzpczE8iFRcMa9" target="_blank" rel="noopener" style="padding:12px 18px; background:var(--gold); color:var(--white); border-radius:8px; font-family:var(--font-heading); font-weight:700; font-size:0.85rem; letter-spacing:1.5px; text-transform:uppercase; white-space:nowrap;">Register 12U →</a>
+                            <a href="https://forms.gle/o1QbzpczE8iFRcMa9" target="_blank" rel="noopener" style="padding:12px 18px; background:var(--pink); color:var(--white); border-radius:8px; font-family:var(--font-heading); font-weight:700; font-size:0.85rem; letter-spacing:1.5px; text-transform:uppercase; white-space:nowrap;">Register 15U →</a>
+                        </div>
+                    </div>
+
+                    <!-- Mon Aug 3 -->
+                    <div class="summer-event-row" style="display:flex; justify-content:space-between; align-items:center; gap:18px; padding:18px 24px; background:var(--white); border-radius:12px; border:3px solid var(--gray-300);">
+                        <div>
+                            <div style="font-family:var(--font-display); font-size:1.4rem; color:var(--navy); line-height:1;">Mon · Aug 3</div>
+                            <div style="font-family:var(--font-heading); font-weight:700; font-size:0.7rem; letter-spacing:1.5px; color:var(--pink); text-transform:uppercase; margin-top:4px;">Open Gym · $10</div>
+                        </div>
+                        <div style="display:flex; gap:8px; flex-shrink:0;">
+                            <a href="https://forms.gle/o1QbzpczE8iFRcMa9" target="_blank" rel="noopener" style="padding:12px 18px; background:var(--gold); color:var(--white); border-radius:8px; font-family:var(--font-heading); font-weight:700; font-size:0.85rem; letter-spacing:1.5px; text-transform:uppercase; white-space:nowrap;">Register 12U →</a>
+                            <a href="https://forms.gle/o1QbzpczE8iFRcMa9" target="_blank" rel="noopener" style="padding:12px 18px; background:var(--pink); color:var(--white); border-radius:8px; font-family:var(--font-heading); font-weight:700; font-size:0.85rem; letter-spacing:1.5px; text-transform:uppercase; white-space:nowrap;">Register 15U →</a>
                         </div>
                     </div>
 
@@ -232,7 +230,7 @@
                 <!-- VENMO PAY BANNER -->
                 <a href="https://account.venmo.com/u/elevatelawrencevb" target="_blank" rel="noopener" class="venmo-banner" style="display:flex; justify-content:space-between; align-items:center; gap:18px; padding:18px 24px; background:var(--white); border:3px solid var(--navy); border-radius:12px; margin-top:18px; text-decoration:none; transition:transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 24px rgba(15,26,46,0.2)';" onmouseout="this.style.transform='';this.style.boxShadow='';">
                     <div>
-                        <div style="font-family:var(--font-heading); font-weight:700; font-size:0.7rem; letter-spacing:2px; color:#3D95CE; text-transform:uppercase; margin-bottom:4px;">💲 Step 3 · Pay $10 per session</div>
+                        <div style="font-family:var(--font-heading); font-weight:700; font-size:0.7rem; letter-spacing:2px; color:#3D95CE; text-transform:uppercase; margin-bottom:4px;">💲 Step 2 · Pay $10 per session</div>
                         <div style="font-family:var(--font-display); font-size:1.4rem; color:var(--navy); line-height:1.1; margin-bottom:4px;">VENMO OR CASH AT CHECK-IN</div>
                         <div style="font-size:0.88rem; color:var(--gray-700);"><strong>@elevatelawrencevb</strong> · note "Open Gym [date] — [player name]"</div>
                     </div>
